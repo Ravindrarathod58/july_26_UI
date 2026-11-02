@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Modak&family=Noto+Sans+Khudawadi&family=Sekuya&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CDN links -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      p {
+        /* font-size: 3rem;
+        font-weight: 900;
+        letter-spacing: 5px;
+        word-spacing: 30px;
+        line-height: 2; */
+        /* font-family: monospace; */
+        font-family: "Modak", system-ui;
+        /* font-style: italic; */
+        /*           x y blur radius color */
+        text-shadow:
+          1px 1px 2px red,
+          1px 1px 2px blue,
+          -1px -1px 2px green;
+        color: white;
+      }
+      a {
+        text-decoration: none;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        border: 1px solid;
+        box-sizing: border-box;
+        /* border-radius: 50%; */
+        /* box-shadow:
+          3px 3px 5px red,
+          -3px -3px 5px aqua; */
+      }
+      .box1 {
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    
+        Typography in CSS
+            changing font styles, colors, sizes
+
+        1. font-size
+            incr / decr the text size
+
+        Units
+            1. px
+            2. rem
+                relative to root element (HTML)
+                16 - 1rem = 16px
+                2rem = 16 * 2 = 32px
+            3. em
+                relative to parent element
+                1em = parent font size (30px)
+                2em = 30 * 2 = 60px
+
+            font-size : 2rem;
+
+        2. color
+            to change the color of the text
+
+        3. font weight
+            bold bolder lighter
+            100 - 900
+
+        4. text-decoration
+            - underline
+            - overline
+            - line through
+            - none
+
+        5. letter spacing
+        6. word spacing
+        7. line height
+        8. font family
+            font faces
+        9. font-style
+        10. text-shadow
+
+
+    Box - modal
+        every HTML element iteself is box
+        1. height
+        2. width
+        3. margin
+            1. margin-left
+            2. margin-right
+            3. margin-top
+            4. margin-bottom
+
+        4. padding
+            1. padding-left
+            2. padding-right
+            3. padding-top
+            4. padding-bottom
+        5. border
+
+        6. border-radius
+
+        7. box-shadow
+
+        8. box-sizing
+            - border-box
+                element content
+            - content-box
+                element border
+
+
+
+    -->
+    <p>हा एक पॅराग्राफ आहे</p>
+
+    <a href="">Click here</a>
+    <div>
+      <!-- 30px -->
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam
+        dolorum itaque ipsum in iure atque illum praesentium nobis, tempora
+        assumenda.
+      </p>
+    </div>
+
+    <div class="box box1">
+      <h1>H1</h1>
+    </div>
+    <div class="box">
+      <h1>H1</h1>
+    </div>
+  </body>
+</html>

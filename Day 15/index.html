@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <!-- 
+        Utility classes & css modules, variables
+
+        class = ""; multiple values separated with space
+        improves the code reusability
+        improves code redability
+
+        - variable
+                using the varible we can store the properties (values)
+            1. Global
+                global varibles can be accessed anywhere in the file
+                we can declare the global variables in the root selector
+                :root{
+                }
+            2. Local
+                local varible only be accessed within the same block
+                h1{
+                
+                
+                }
+
+            we have to use the var() function to use the value of the variable
+
+            modules
+                we can maintain the large codebase of the css in multiple files using modules
+                using import statement we can import the CSS files 
+
+
+    -->
+
+    <div class="top-bar d-flex justify-content-between align-items-center">
+      <div class="left">
+        <span class="star">&starf;</span>
+        <span class="offer">Get 5% off on your first order</span>
+        <span class="promo">Promo : ORDER5</span>
+      </div>
+      <div class="right d-flex justify-content-center align-items-center">
+        <span>📍</span>
+        <p>Banjara hills , <b> road no 12</b>Hyderbad</p>
+        <a href="">Change Location</a>
+      </div>
+    </div>
+
+    <header class="d-flex justify-content-between align-items-center">
+      <p>Order <span>.in</span></p>
+      <nav class="d-flex justify-content-between align-items-center">
+        <a href="">Home</a>
+        <a href="">Browse Menu</a>
+        <a href="">Special offers</a>
+        <a href="">Restaurants</a>
+        <a href="">Track Orders </a>
+      </nav>
+      <div class="button d-flex justify-content-around">
+        <button
+          class="btn_1 d-flex justify-content-around align-items-center relative"
+        >
+          <span class="material-symbols-outlined"> shopping_cart </span>
+          <span
+            class="badge absolute circle d-flex justify-content-center align-items-center"
+            >23</span
+          >
+          <span class="fw-bold"> &#8377; 1,249 </span>
+        </button>
+        <button class="btn_2 d-flex justify-content-around align-items-center">
+          <span class="material-symbols-outlined"> person </span>
+          login / signup
+        </button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="left">
+        <div class="first">
+          <p class="text-capital">
+            Order restaurant food, takeaway and groceries
+          </p>
+          <p class="text-capital">Feast your senses,</p>
+          <p class="text-capital">Fast and Fresh</p>
+        </div>
+        <div class="second">
+          <p>Enter a pincode to see what we deliver</p>
+          <div class="search">
+            <input type="text" placeholder="e.g. 500034" />
+            <button>Search</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="first"></div>
+        <div class="second"></div>
+      </div>
+    </section>
+  </body>
+</html>

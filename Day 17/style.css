@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+.color {
+  color: orangered;
+}
+.fs-2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.container {
+  /* margin-top: 100px; */
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  /* border: 1px solid red; */
+  box-shadow: 0 0 5px gainsboro;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+.card img {
+  width: 100%;
+  height: 50%;
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  cursor: pointer;
+}
+
+.loading {
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  border: 1px solid red;
+  width: 100%;
+  backdrop-filter: blur(7px);
+}
+
+.loader {
+  height: 80px;
+  width: 80px;
+  border: 5px solid;
+  border-top: 7px solid red;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+
+  /* forwards liner */
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

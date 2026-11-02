@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- 
+    
+        text, symbols, emojis
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 
+
+    -->
+    <title>Document</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- 
+        external css file
+        CDN - 
+    -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- For javascript -->
+    <script></script>
+  </head>
+  <body>
+    <!-- 
+
+        Creating navigation bars using anchor tag
+    
+    -->
+
+    <!-- grouping elements -->
+    <header>
+      <nav>
+        <span>Title</span>
+        <a href="./index.html" target="_blank">Home</a>
+        <span>|</span>
+        <a href="./about.html" target="_blank">About</a>
+        <span>|</span>
+        <a href="./contact.html" rel="noopener noreferer">Contact</a>
+        <span>|</span>
+        <a href="./help.html">Help</a>
+      </nav>
+    </header>
+
+    <!-- 
+        Web introduction
+            internet, URL, protocols ( http, https, tcp, IP), ISP, Client, Server
+        
+        HTML Introduction
+            HTML, Structure
+                <html> 
+                    <head></head>
+                    <body> </body>
+                </html>
+            Types of tags
+                block level
+                inline 
+
+            presentational & formatting
+            heading, p, span, pre, code, sup, sub, q, blockquote
+            b, u, strong, i, mark
+
+            links & images 
+            attributes
+            list, div & iframe
+            tables
+            forms
+            semantic elements
+            multimedia tags
+
+        CSS
+            CSS introduction, structure
+                selection {
+                    property : value;
+                }
+
+            color & background
+            color -> text color
+            background-color
+            background-image
+                background-repeat
+                background-size
+                background-position
+                
+                gradient -> radial, linier
+
+            styling links & images
+            styling tables
+            selectors
+            box modal
+            position properties
+            flexbox
+            grid
+            media queries
+            utility classes
+            transition & animations
+            
+        
+
+
+
+            links & images 
+
+                URLS
+
+                    http://127.0.0.1:5500/Day%2003/index.html
+
+                    file:///E:/GTH%20Classroom%20Content/UI%20Batch%20July%202026/Day%2003/index.html
+
+                    protocol , domain name , resource
+                    https://flikart.com/home.html / index.html
+
+                    1. absolute
+                          https://flikart.com/home.html
+                    2. relative URL
+                        ./ to refer to file or resourse in same folder
+                        ../   / ../day 02 / resource name
+                        ../../
+
+                links
+                    external
+                        absolute URLS
+                    interal
+
+
+                images
+
+                    <img>
+
+    
+    -->
+
+    <!-- 
+        anchor tag
+        href -> 
+    -->
+    <!-- external linking -->
+    <a href="https://www.google.com">Visit Google</a>
+    <!-- internal linking -->
+    <a href="./about.html">about page</a>
+
+    <!-- linking sections -->
+    <a href="#footer_section">Scroll to bottom</a>
+    <!-- default id -->
+    <!-- 
+        top bottom
+    
+     -->
+
+    <!-- link for download  -->
+    <a href="./about.html" download="about">download about page</a>
+    <a href="./style.css">test</a>
+
+    <!-- link states -->
+    <!-- 
+        1. active
+            - red color
+        2. visited
+            - purple color
+        3. unvisited
+            - blue color
+    
+     -->
+
+    <!-- 
+     
+        rel attribute
+     -->
+    <!-- 
+        when we dont want to allow the links to follow
+            noopener noreferer
+        -->
+    <a href="https://www.google.com" rel="nofollow noopener">Visit Google</a>
+    <p></p>
+
+    <section id="footer_section">
+      <h1>Footer</h1>
+    </section>
+
+    <!-- Images -->
+    <!-- using absolute URL 
+     
+        src - resource
+        alt - alternative text
+                - in case image is not visible
+                - screen readers
+        height
+
+        width
+
+    -->
+    <img
+      src="https://images.pexels.com/photos/27786307/pexels-photo-27786307.jpeg?cs=srgb&dl=pexels-yudha-dwiyoko-putra-1663958278-27786307.jpg&fm=jpg"
+      alt="Nature"
+      height="500"
+      width="1400"
+    />
+
+    <!-- 
+        using relative URL
+     -->
+    <img src="./image.png" alt="" height="500" width="1400" />
+
+    <!-- images as link -->
+    <a href="https://www.google.com">
+      <img src="./images/image.png" alt="" />
+      <img src="../images/image.png" alt="" />
+    </a>
+
+    <!-- background images -->
+    <!-- 
+    
+        background-image
+     -->
+    <section>
+      <h1>This is heading 1</h1>
+    </section>
+
+    <a href="#top">scroll to top</a>
+
+    <!-- 
+        target 
+            _blank 
+                    opens link in new tab
+            _self
+            _parent
+                open link in iframe
+    -->
+    <a href="" target="_blank"></a>
+    <a href="" target="_self"></a>
+    <a href="" target="_parent"></a>
+
+    <!-- 
+        anchor
+            href 
+            rel
+            target
+
+        img
+            src
+            alt
+            height
+            width
+    
+    
+    -->
+
+    <!--  
+    
+    1. Image gallery
+    2. demonstrate the use of links in HTML (internal & external) by linking
+        some resources
+    
+
+
+
+    attributes
+
+
+
+
+
+
+       
+    -->
+  </body>
+</html>

@@ -1,0 +1,1702 @@
+<!doctype html>
+
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="web_standard" name="shell-type" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&amp;family=Source+Sans+3:ital,wght@0,300..700;1,300..700&amp;family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        body {
+          overscroll-behavior: none;
+        }
+        main > :first-child {
+          margin-top: 0 !important;
+        }
+        main > :last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#690005",
+              "surface-tint": "#ffb778",
+              "on-tertiary-fixed": "#0f1f16",
+              "on-tertiary-fixed-variant": "#3a4b3f",
+              "inverse-primary": "#8e4e00",
+              outline: "#a08d7f",
+              "on-surface-variant": "#d8c3b3",
+              "outline-variant": "#534438",
+              "on-primary": "#4c2700",
+              "error-container": "#93000a",
+              "on-secondary-fixed": "#2b1700",
+              "on-error-container": "#ffdad6",
+              "surface-container-high": "#292a2b",
+              secondary: "#fcb96d",
+              "on-tertiary": "#24342a",
+              "surface-bright": "#38393a",
+              "surface-container": "#1f2021",
+              primary: "#ffb778",
+              "tertiary-fixed-dim": "#b8cbbd",
+              "on-tertiary-container": "#1d2d23",
+              "surface-container-lowest": "#0d0e0f",
+              "primary-container": "#cb7f34",
+              background: "#121314",
+              tertiary: "#b8cbbd",
+              "tertiary-container": "#839588",
+              surface: "#121314",
+              "surface-container-highest": "#343536",
+              "on-secondary-fixed-variant": "#673d00",
+              "surface-variant": "#343536",
+              "on-background": "#e3e2e3",
+              "inverse-on-surface": "#303031",
+              "secondary-fixed-dim": "#fcb96d",
+              "primary-fixed": "#ffdcc1",
+              "on-primary-fixed-variant": "#6c3a00",
+              "primary-fixed-dim": "#ffb778",
+              "inverse-surface": "#e3e2e3",
+              "on-primary-container": "#422200",
+              "on-primary-fixed": "#2e1500",
+              "on-secondary": "#482900",
+              "secondary-container": "#744600",
+              "surface-dim": "#121314",
+              "surface-container-low": "#1b1c1d",
+              "secondary-fixed": "#ffddba",
+              "tertiary-fixed": "#d4e7d8",
+              error: "#ffb4ab",
+              "on-surface": "#e3e2e3",
+              "on-secondary-container": "#f8b66a",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "gutter-sm": "1rem",
+              margin: "2rem",
+              "gutter-lg": "2.5rem",
+              "margin-desktop": "4rem",
+              "space-lg": "1.75rem",
+              "space-md": "1rem",
+              "space-sm": "0.5rem",
+              "margin-mobile": "1.25rem",
+              "space-xs": "0.25rem",
+              "space-xl": "3rem",
+              gutter: "1.5rem",
+            },
+            fontFamily: {
+              "body-md": ['"Source Sans 3"'],
+              "body-sm": ['"Source Sans 3"'],
+              "body-lg": ['"Source Sans 3"'],
+              "label-lg": ["Space Mono"],
+              "headline-lg": ["Newsreader"],
+              "label-md": ["Space Mono"],
+              "headline-lg-mobile": ["Newsreader"],
+              "headline-xl-mobile": ["Newsreader"],
+              "headline-sm": ["Newsreader"],
+              "label-sm": ["Space Mono"],
+              "headline-xl": ["Newsreader"],
+              "headline-md": ["Newsreader"],
+            },
+            fontSize: {
+              "body-md": ["15px", { lineHeight: "24px", fontWeight: "400" }],
+              "body-sm": ["13px", { lineHeight: "20px", fontWeight: "400" }],
+              "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+              "label-lg": [
+                "14px",
+                {
+                  lineHeight: "18px",
+                  letterSpacing: "0.08em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg": [
+                "40px",
+                {
+                  lineHeight: "48px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "400",
+                },
+              ],
+              "label-md": [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  letterSpacing: "0.12em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg-mobile": [
+                "30px",
+                { lineHeight: "36px", fontWeight: "400" },
+              ],
+              "headline-xl-mobile": [
+                "38px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-sm": [
+                "22px",
+                {
+                  lineHeight: "28px",
+                  letterSpacing: "0.02em",
+                  fontWeight: "600",
+                },
+              ],
+              "label-sm": [
+                "10px",
+                {
+                  lineHeight: "14px",
+                  letterSpacing: "0.15em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-xl": [
+                "56px",
+                {
+                  lineHeight: "64px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "400",
+                },
+              ],
+              "headline-md": [
+                "28px",
+                {
+                  lineHeight: "36px",
+                  letterSpacing: "0.01em",
+                  fontWeight: "500",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-background font-body-md text-body-md text-on-surface antialiased"
+  >
+    <header
+      class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.5)] border-b border-outline-variant/30"
+    >
+      <div
+        class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-space-md"
+      >
+        <div class="flex items-center gap-space-md shrink-0">
+          <img
+            alt="Iron &amp; Embers Motorcycles Crest Logo"
+            class="h-8 w-auto object-contain"
+            src="https://lh3.googleusercontent.com/aida/AEtjO1WxdakpKQtRm08ubP4SsPLNHsGntYmZCAOiy7ZQqKqJlwswaxKb2tl9uq6mC8arXu-6XZkyNYEI2CiWCZNbecCE6V6jou2HQ19MdpsYXVX8XefsqGCxEPfaWJ-r-n5OkNBfyQch8QRoBVIPh3L1_pyBaDDD9Og-gsUYggTNr1krnf_2oM8L5NQE1YaeMlQhYt-sl0GeRa_egFZN1A5Pue971I6Li1jpQBd3M7vmNSJUz-ScyI7vIrR8ofY"
+          />
+          <div class="flex flex-col">
+            <span
+              class="font-headline-sm text-headline-sm tracking-wide text-primary uppercase leading-none"
+              >Iron &amp; Embers</span
+            ><span
+              class="font-label-sm text-label-sm text-outline tracking-widest uppercase mt-space-xs"
+              >Heritage Motoring • Est. 1901</span
+            >
+          </div>
+        </div>
+        <nav
+          class="hidden xl:flex items-center gap-space-lg"
+          data-active-classes="text-primary border-b border-primary pb-1 font-bold"
+        >
+          <a
+            aria-current="page"
+            class="uppercase tracking-wider transition-colors text-primary border-b border-primary pb-1 font-bold"
+            data-path="motorcycles"
+            href="#"
+            >Motorcycles</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors"
+            data-path="custom-atelier"
+            href="#"
+            >Custom Atelier</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors"
+            data-path="heritage-stories"
+            href="#"
+            >Heritage &amp; Stories</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors"
+            data-path="rides-community"
+            href="#"
+            >Rides &amp; Community</a
+          ><a
+            class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors"
+            data-path="locate-dealer"
+            href="#"
+            >Locate Dealer</a
+          >
+        </nav>
+        <div class="flex items-center gap-space-md shrink-0">
+          <a
+            class="hidden sm:flex items-center justify-center p-2 rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors"
+            data-path="locate-dealer"
+            href="#"
+            title="Dealer Network"
+            ><span class="material-symbols-outlined text-[20px]"
+              >pin_drop</span
+            ></a
+          ><a
+            class="bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-label-md text-label-md px-5 py-2.5 uppercase tracking-wider font-bold rounded transition-colors shadow-[0_2px_8px_rgba(203,127,52,0.25)]"
+            data-path="book-test-ride"
+            href="#"
+            >Book a Test Ride</a
+          >
+          <div class="flex items-center pl-space-xs">
+            <img
+              alt="Profile"
+              class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0iAWVmd698_CQqmbx2GgrVKMLTEPWNvHRaeU1d2SjRXxV9gJ1F-ROXvg09UFMmoCQuEgO4QOlLUX8sttneqFSkgeq94rReJnr2pq_ISwF4GXEuOqvGNmcInCsndm7oUNgMj5UKYq_bReo8zeYRRBW9Iz_tsIhu2jGZnrZ7rH3aQ1T7kUVij7nwDxXsMEm7D_BPtkTiPr7BE7_syE7S5trAxWCTZC1AN8pxA4gZjyY6L_GCyTDIy5p"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="w-full pt-20 bg-background">
+      <div class="flex flex-col w-full">
+        <!-- HERO SECTION: Elevated Luxury Automotive Showroom -->
+        <section
+          class="relative w-full overflow-hidden bg-surface-container-lowest -mt-20 pt-32 pb-20 border-b border-outline-variant/20"
+        >
+          <div
+            class="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_75%_55%_at_50%_25%,rgba(203,127,52,0.15),transparent_70%)]"
+          ></div>
+          <div
+            class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop relative z-10 space-y-12"
+          >
+            <!-- Hero Editorial Headline & Intro -->
+            <div class="max-w-4xl space-y-4">
+              <div class="inline-flex items-center gap-3">
+                <span
+                  class="w-2 h-2 rounded-full bg-primary animate-pulse"
+                ></span>
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-primary"
+                  >Flagship 2025 // Interceptor 650 Twin</span
+                >
+                <span class="text-outline/40">|</span>
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant"
+                  >124 Years Continuous Heritage</span
+                >
+              </div>
+              <h1
+                class="font-headline-xl text-3xl sm:text-5xl lg:text-[62px] lg:leading-[1.1] uppercase text-on-surface tracking-tight font-normal"
+              >
+                The Thump of
+                <span class="italic text-primary">Pure Heritage</span
+                >.<br />Crafted for the Highway.
+              </h1>
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl font-light"
+              >
+                Forged in cold-rolled steel and tuned for cadence. Featuring
+                hand-poured copper luster, artisan Madras pinstriping, and an
+                air-cooled 270° counterbalanced parallel twin.
+              </p>
+              <!-- CTAs & Starting Price -->
+              <div class="flex flex-wrap items-center gap-5 pt-4">
+                <a
+                  class="px-8 py-3.5 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold shadow-[0_4px_16px_rgba(203,127,52,0.3)] hover:bg-surface-tint transition-all"
+                  href="#"
+                >
+                  Book Test Ride
+                </a>
+                <a
+                  class="px-8 py-3.5 rounded border border-outline-variant text-on-surface hover:border-primary hover:text-primary font-label-md text-label-md uppercase tracking-wider font-bold transition-all bg-surface-container/40 backdrop-blur-sm"
+                  href="#"
+                >
+                  Explore &amp; Configure
+                </a>
+                <div
+                  class="flex items-center gap-2 pl-2 sm:pl-4 sm:border-l border-outline-variant/40"
+                >
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-outline"
+                    >Starting at</span
+                  >
+                  <span
+                    class="font-headline-sm text-headline-sm text-primary font-semibold"
+                    >$6,149</span
+                  >
+                  <span
+                    class="font-body-sm text-body-sm text-on-surface-variant"
+                    >MSRP</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Cinematic Showcase Canvas -->
+            <div
+              class="relative w-full rounded-2xl overflow-hidden shadow-2xl bg-surface-container border border-outline-variant/30"
+            >
+              <div class="relative h-[380px] sm:h-[500px] lg:h-[620px] w-full">
+                <img
+                  class="w-full h-full object-cover object-center"
+                  data-alt="Flagship 2025 classic twin motorcycle parked on polished dark wet concrete inside an industrial British heritage brick atelier, warm tungsten spotlight grazing over a hand-polished brushed copper and chrome teardrop fuel tank, spoked alloy wheels, fine dual exhausts gleaming, dark moody background with subtle atmospheric warm smoke"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_i5zbtl1qvMcnRelaPTX-u2YjDZNyX9-FowyPzb02vBqPTv03i7_tYryMca0sS3J2ey078cFyJFtwHSRHTmAum-uhGRotWPsSdYiW9E2rBG2egORVEw9KqMipsW0ZvGWxOwtJeWrGIo8MSbkbeF7OvO6qWNFN8LnVAbfHf_OWS_ywbYbFd_cAZwlyDqD-aPiK2e6j-1PJI6vYLVEW6JXmJxRHgkV-LkbBoKOaXr16F_YX1n1o_ch2"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"
+                ></div>
+                <div
+                  class="absolute bottom-6 left-6 hidden sm:flex items-center gap-3 bg-surface-container-lowest/80 backdrop-blur-md px-4 py-2 rounded border border-outline-variant/30"
+                >
+                  <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface"
+                    >Finish: Copper Sunburst &amp; Polished Billet</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Minimalist Mechanical Spec Bar -->
+            <div
+              class="grid grid-cols-2 md:grid-cols-4 gap-y-6 gap-x-8 pt-2 divide-y md:divide-y-0 md:divide-x divide-outline-variant/20 border-t border-outline-variant/20"
+            >
+              <div class="pt-4 md:pt-0 md:px-6 first:pl-0">
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-outline block"
+                  >Displacement</span
+                >
+                <span
+                  class="font-headline-sm text-xl lg:text-2xl text-on-surface font-semibold block mt-1"
+                  >648cc Parallel Twin</span
+                >
+                <span
+                  class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                  >Air &amp; oil-cooled 4-stroke SOHC</span
+                >
+              </div>
+              <div class="pt-4 md:pt-0 md:px-6">
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-outline block"
+                  >Power &amp; Torque</span
+                >
+                <span
+                  class="font-headline-sm text-xl lg:text-2xl text-on-surface font-semibold block mt-1"
+                  >47 bhp @ 52.3 Nm</span
+                >
+                <span
+                  class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                  >Linear pull from 2,500 RPM</span
+                >
+              </div>
+              <div class="pt-4 md:pt-0 md:px-6">
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-outline block"
+                  >Transmission</span
+                >
+                <span
+                  class="font-headline-sm text-xl lg:text-2xl text-on-surface font-semibold block mt-1"
+                  >6-Speed Slipper</span
+                >
+                <span
+                  class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                  >Assist &amp; slipper clutch mechanism</span
+                >
+              </div>
+              <div class="pt-4 md:pt-0 md:px-6 last:pr-0">
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-outline block"
+                  >Chassis Architecture</span
+                >
+                <span
+                  class="font-headline-sm text-xl lg:text-2xl text-on-surface font-semibold block mt-1"
+                  >Harris Tubular Cradle</span
+                >
+                <span
+                  class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                  >Engineered dual-cradle steel frame</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 2: Simplified & Attractive Fleet Lineup -->
+        <section
+          class="w-full bg-background py-24 border-b border-outline-variant/20"
+        >
+          <div
+            class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop space-y-12"
+          >
+            <!-- Section Header & Filter Tabs -->
+            <div
+              class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-2"
+            >
+              <div class="space-y-2">
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-primary block"
+                  >Current Production Series</span
+                >
+                <h2
+                  class="font-headline-lg text-3xl sm:text-4xl text-on-surface font-normal"
+                >
+                  Iconic Fleet Lineup
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant max-w-xl font-light"
+                >
+                  Each motorcycle is precision-balanced for open-road cadence
+                  and finished with heritage hand-crafted details.
+                </p>
+              </div>
+              <!-- Understated Luxury Filter Tabs -->
+              <div
+                class="flex flex-wrap items-center gap-1 border-b border-outline-variant/30 pb-1 self-start lg:self-auto"
+              >
+                <button
+                  class="px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider text-primary border-b-2 border-primary font-bold"
+                >
+                  All Models
+                </button>
+                <button
+                  class="px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors"
+                >
+                  Classic Cruisers
+                </button>
+                <button
+                  class="px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors"
+                >
+                  Cafe Racers
+                </button>
+                <button
+                  class="px-4 py-2 font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface border-b-2 border-transparent transition-colors"
+                >
+                  Adventure Tourers
+                </button>
+              </div>
+            </div>
+            <!-- Fleet Grid: 4 Clean Spacious Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <!-- Bike Card 1: Interceptor 650 -->
+              <div
+                class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 group shadow-lg"
+              >
+                <div
+                  class="relative h-64 w-full overflow-hidden bg-surface-container-low"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Profile studio photograph of a classic British twin motorcycle in gleaming copper and black paint, polished chrome twin exhaust pipes, authentic spoke wheels with Avon road tires, clean minimal dark studio lighting with metallic highlights"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTr6QB7kG-BZC5rTruw3p5SRNIiWJeOnkBrcRmfYnfP2R-2ylSqflDwAmdxdaa-c4O-fub2mtjzT64blNCBU6MpBpnjyHaSwOiFjO5isG_qudi4f1R7TjtDbIc-Cwf5adbifX65LsSvVOs7Oo-pEbrG5ELGG6QUy4rP1pc0hPZqXbBKCNrC9IJOAU8IPlGYRhf_6uW5aADh0R5uFSG6W82I4fioLX-baYql8wV0jBdXmb0XI0S_gmT"
+                  />
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
+                  <div>
+                    <div class="flex items-baseline justify-between">
+                      <h3
+                        class="font-headline-sm text-xl text-on-surface font-semibold"
+                      >
+                        Interceptor 650
+                      </h3>
+                      <span
+                        class="font-label-md text-label-md text-primary font-bold"
+                        >From $6,149</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 font-light"
+                    >
+                      Quintessential British twin roadster with upright
+                      ergonomic posture.
+                    </p>
+                    <div
+                      class="grid grid-cols-3 gap-2 mt-5 py-3 border-y border-outline-variant/20 text-center"
+                    >
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm text-outline block"
+                          >Engine</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface font-bold"
+                          >648cc</span
+                        >
+                      </div>
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm text-outline block"
+                          >Output</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface font-bold"
+                          >47 hp</span
+                        >
+                      </div>
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm text-outline block"
+                          >Weight</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface font-bold"
+                          >202 kg</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <a
+                      class="flex-1 text-center py-2.5 bg-primary text-on-primary rounded font-label-sm text-label-sm uppercase font-bold hover:bg-surface-tint transition-colors"
+                      href="#"
+                      >Configure</a
+                    >
+                    <a
+                      class="flex-1 text-center py-2.5 border border-outline-variant text-on-surface hover:border-primary hover:text-primary rounded font-label-sm text-label-sm uppercase transition-colors"
+                      href="#"
+                      >Test Ride</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Bike Card 2: Vanguard Classic 350 -->
+              <div
+                class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 group shadow-lg"
+              >
+                <div
+                  class="relative h-64 w-full overflow-hidden bg-surface-container-low"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Vintage British inspired single cylinder classic motorcycle in deep military matte green with tan hand-stitched sprung saddle, heavy rounded steel fenders, brass badges, warm moody garage lighting"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4IHYP-R_5MDjjgHeIk_yuT12ERSrlo_N5EMUIUx5lDv7ryVRzFbQvck-MAFx20H1epX_fWu3Q17G0AIn9cnHOdix943RuA-FM2lSg78bAU8t0HEPXBGj16KCC3zwFsJpr__SwnxsdZsVBa-dmgECp1TqsuwbyYjr2YFasdWE3_gs-ygAYlnBe-YLLCxe_F7ouvGMyACCztTo4uNxbfxuBYo-BUV7l44K2mKS85hxoaU2m1YJbtXUs"
+                  />
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
+                  <div>
+                    <div class="flex items-baseline justify-between">
+                      <h3
+                        class="font-headline-sm text-xl text-on-surface font-semibold"
+                      >
+                        Classic 350
+                      </h3>
+                      <span
+                        class="font-label-md text-label-md text-primary font-bold"
+                        >From $4,599</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 font-light"
+                    >
+                      Timeless post-war stance featuring hand-painted pinstripes
+                      and sprung saddle.
+                    </p>
+                    <div
+                      class="grid grid-cols-3 gap-2 mt-5 py-3 border-y border-outline-variant/20 text-center"
+                    >
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm text-outline block"
+                          >Engine</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface font-bold"
+                          >349cc</span
+                        >
+                      </div>
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm text-outline block"
+                          >Output</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface font-bold"
+                          >20 hp</span
+                        >
+                      </div>
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm text-outline block"
+                          >Weight</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface font-bold"
+                          >195 kg</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <a
+                      class="flex-1 text-center py-2.5 bg-primary text-on-primary rounded font-label-sm text-label-sm uppercase font-bold hover:bg-surface-tint transition-colors"
+                      href="#"
+                      >Configure</a
+                    >
+                    <a
+                      class="flex-1 text-center py-2.5 border border-outline-variant text-on-surface hover:border-primary hover:text-primary rounded font-label-sm text-label-sm uppercase transition-colors"
+                      href="#"
+                      >Test Ride</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Bike Card 3: Continental GT 650 -->
+              <div
+                class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 group shadow-lg"
+              >
+                <div
+                  class="relative h-64 w-full overflow-hidden bg-surface-container-low"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Pure cafe racer motorcycle in polished mirror chrome and racing yellow stripe, low clip-on handlebars, sculpted aerodynamic fiberglass rear racing cowl, dual upswept reverse cone megaphones, warm dramatic side studio light"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUb9_sqMJOo0hHrOiPvrXn-R8Z4W-yTIhqfCWzkj0lqCPqfkVYPRgdlvhrmeQ-xBVTAye_2RmDZXQb0EtbFvORdRIuLdw6n8Sq4EgpHuKD6iw_e0wr19iVQCBAlaUgjCdwYUEjHO-cxJg_ssZ5Foa5Qd6gDTtp-PHw_GCAXEq8FZfLmL9CAtrcDBOemYTSwjCI-ASX4XBClsS6_DquxiLuI8jPfE1MWf3p1DzAZNXOJmXxQdEhO0iY"
+                  />
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
+                  <div>
+                    <div class="flex items-baseline justify-between">
+                      <h3
+                        class="font-headline-sm text-xl text-on-surface font-semibold"
+                      >
+                        Continental GT
+                      </h3>
+                      <span
+                        class="font-label-md text-label-md text-primary font-bold"
+                        >From $6,599</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 font-light"
+                    >
+                      Aggressive cafe racer ergonomics with clip-on bars and
+                      rear-set footpegs.
+                    </p>
+                    <div
+                      class="grid grid-cols-3 gap-2 mt-5 py-3 border-y border-outline-variant/20 text-center"
+                    >
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm text-outline block"
+                          >Engine</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface font-bold"
+                          >648cc</span
+                        >
+                      </div>
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm text-outline block"
+                          >Output</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface font-bold"
+                          >47 hp</span
+                        >
+                      </div>
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm text-outline block"
+                          >Weight</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface font-bold"
+                          >198 kg</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <a
+                      class="flex-1 text-center py-2.5 bg-primary text-on-primary rounded font-label-sm text-label-sm uppercase font-bold hover:bg-surface-tint transition-colors"
+                      href="#"
+                      >Configure</a
+                    >
+                    <a
+                      class="flex-1 text-center py-2.5 border border-outline-variant text-on-surface hover:border-primary hover:text-primary rounded font-label-sm text-label-sm uppercase transition-colors"
+                      href="#"
+                      >Test Ride</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Bike Card 4: Himalaya 450 -->
+              <div
+                class="flex flex-col bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 transition-all duration-300 group shadow-lg"
+              >
+                <div
+                  class="relative h-64 w-full overflow-hidden bg-surface-container-low"
+                >
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Rugged adventure motorcycle outfitted with aluminium pannier boxes and crash guards, high ground clearance, 21-inch front spoke rim, parked on rocky gravel terrain under mountain peaks with golden sunset dust"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW40eqzYzG2Nh-sB4af_t9n4FFZkUfTimN32tZ7jyE0kmHiFjD0hvSaiz_nR9LwS5Shq8lUR3RK1_mobxLdNljkDCxS_nsGG9M8HiwCVvNvWwLKIqDRZX0UBpFYSAmyAH3L3LJsNSBQSEZ5-U9zpVxqPjxny9utVmJarDUFouEcCFHMLOIKEyWv0ile2_GCFYReXn7Kzc_rq0XU5iUTAaU6-29EZoQprUwVhYAWW-kSVM862IjhZKT"
+                  />
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
+                  <div>
+                    <div class="flex items-baseline justify-between">
+                      <h3
+                        class="font-headline-sm text-xl text-on-surface font-semibold"
+                      >
+                        Himalaya 450
+                      </h3>
+                      <span
+                        class="font-label-md text-label-md text-primary font-bold"
+                        >From $5,799</span
+                      >
+                    </div>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 font-light"
+                    >
+                      Purpose-engineered all-terrain tourer with Sherpa 450
+                      engine and TFT navigation.
+                    </p>
+                    <div
+                      class="grid grid-cols-3 gap-2 mt-5 py-3 border-y border-outline-variant/20 text-center"
+                    >
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm text-outline block"
+                          >Engine</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface font-bold"
+                          >452cc</span
+                        >
+                      </div>
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm text-outline block"
+                          >Output</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface font-bold"
+                          >40 hp</span
+                        >
+                      </div>
+                      <div>
+                        <span
+                          class="font-label-sm text-label-sm text-outline block"
+                          >Weight</span
+                        >
+                        <span
+                          class="font-label-sm text-label-sm text-on-surface font-bold"
+                          >196 kg</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <a
+                      class="flex-1 text-center py-2.5 bg-primary text-on-primary rounded font-label-sm text-label-sm uppercase font-bold hover:bg-surface-tint transition-colors"
+                      href="#"
+                      >Configure</a
+                    >
+                    <a
+                      class="flex-1 text-center py-2.5 border border-outline-variant text-on-surface hover:border-primary hover:text-primary rounded font-label-sm text-label-sm uppercase transition-colors"
+                      href="#"
+                      >Test Ride</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 3: Editorial Heritage & Craft Storytelling -->
+        <section
+          class="w-full bg-surface-container-low py-24 border-b border-outline-variant/20"
+        >
+          <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center"
+            >
+              <!-- Artisan Imagery -->
+              <div class="lg:col-span-7">
+                <div
+                  class="relative rounded-2xl overflow-hidden shadow-2xl bg-surface-container border border-outline-variant/30"
+                >
+                  <div class="h-[420px] sm:h-[500px] w-full">
+                    <img
+                      class="w-full h-full object-cover"
+                      data-alt="Elderly artisan craftsman in a leather apron hand-painting gold pinstripes on a dark gloss motorcycle petrol tank using an ultra-fine camel hair brush inside an antique British workshop with copper tools and vintage engine castings in the soft focus background"
+                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuAK9U0tVqYFWewAUv2wWNmqK9YqLQIbLOgxCFkIFWXoaDckVlHfBhbhuDEyw5t7uMjW6Ff4skusefG2-hiovA9wXmSNs_1QZhwyC66DQuWNukNOGjgeMJxgDUA2EqRNtS0-rMH1yHzjnRKoyVg2WNpctmFfoqMXEPnQrI4W3smC33jKMxj0KVM2TbwsGD3q2mFbvdC1N_bLMUdKRXVAKrhhBn5061WmvJdlcL9Vi7eC55Sd0KsybsTt"
+                    />
+                    <div
+                      class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent"
+                    ></div>
+                    <div
+                      class="absolute bottom-6 left-6 right-6 flex items-center justify-between"
+                    >
+                      <div>
+                        <p
+                          class="font-label-sm text-label-sm uppercase tracking-widest text-primary"
+                        >
+                          Master Guild Craftsmen
+                        </p>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface font-light"
+                        >
+                          Redditch &amp; Madras Heritage Atelier
+                        </p>
+                      </div>
+                      <span
+                        class="font-label-sm text-label-sm uppercase tracking-wider text-outline border border-outline-variant/40 px-3 py-1 rounded bg-surface-container-lowest/70 backdrop-blur-sm"
+                        >Est. 1901</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Refined Editorial Content -->
+              <div class="lg:col-span-5 space-y-6">
+                <div class="inline-flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-primary"
+                    >Madras &amp; Redditch Works</span
+                  >
+                </div>
+                <h2
+                  class="font-headline-lg text-3xl sm:text-4xl text-on-surface font-normal leading-tight"
+                >
+                  The Art of the Pinstripe. <br />
+                  <span class="italic text-primary"
+                    >Pure Craftsmanship Since 1901.</span
+                  >
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed"
+                >
+                  No automated robot arm or vinyl decal touches our teardrop
+                  tanks. Each tank is pressed from heavy British cold-rolled
+                  steel, triple-plated in mirror nickel chrome, and pinstriped
+                  by hand using fine bristles that trace back through
+                  generations of guild artisans.
+                </p>
+                <!-- 3 Pillars -->
+                <div class="space-y-4 pt-2">
+                  <div class="border-l-2 border-primary/40 pl-4 space-y-0.5">
+                    <h4
+                      class="font-label-md text-label-md uppercase text-on-surface font-bold"
+                    >
+                      Deep Drawn Cold-Rolled Steel
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                    >
+                      Stamped on historic dies and inspected under raking light
+                      for flawless balance.
+                    </p>
+                  </div>
+                  <div class="border-l-2 border-primary/40 pl-4 space-y-0.5">
+                    <h4
+                      class="font-label-md text-label-md uppercase text-on-surface font-bold"
+                    >
+                      Madras Freehand Guild Liners
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                    >
+                      Drawn in single fluid strokes without masking guides or
+                      mechanical assistance.
+                    </p>
+                  </div>
+                  <div class="border-l-2 border-primary/40 pl-4 space-y-0.5">
+                    <h4
+                      class="font-label-md text-label-md uppercase text-on-surface font-bold"
+                    >
+                      Baked Enamel Hard-Finish
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                    >
+                      Triple clear-coated in temperature-controlled autoclaves
+                      for lasting luster.
+                    </p>
+                  </div>
+                </div>
+                <div class="pt-2">
+                  <a
+                    class="inline-flex items-center gap-2 font-label-md text-label-md uppercase tracking-wider text-primary hover:text-surface-tint font-bold transition-colors"
+                    href="#"
+                  >
+                    <span>Explore The Heritage Archives</span>
+                    <span class="material-symbols-outlined text-[16px]"
+                      >arrow_forward</span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 4: Custom Atelier Studio Teaser -->
+        <section
+          class="w-full bg-background py-24 border-b border-outline-variant/20"
+        >
+          <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop">
+            <div
+              class="bg-surface-container rounded-2xl p-8 lg:p-12 border border-outline-variant/30 relative overflow-hidden shadow-2xl"
+            >
+              <div
+                class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-10 border-b border-outline-variant/20"
+              >
+                <div class="space-y-2">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-primary block"
+                    >Factory Customisation</span
+                  >
+                  <h2
+                    class="font-headline-lg text-3xl sm:text-4xl text-on-surface font-normal"
+                  >
+                    The Custom Atelier Studio
+                  </h2>
+                  <p
+                    class="font-body-md text-body-md text-on-surface-variant max-w-xl font-light"
+                  >
+                    Tailor your motorcycle with 140+ factory-certified genuine
+                    accessories, precision-machined trims, and artisanal leather
+                    saddles.
+                  </p>
+                </div>
+                <a
+                  class="px-8 py-3.5 rounded bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider font-bold hover:bg-surface-tint transition-all shadow-[0_4px_16px_rgba(203,127,52,0.3)] self-start md:self-auto shrink-0"
+                  href="#"
+                >
+                  Launch 3D Configurator
+                </a>
+              </div>
+              <!-- Studio Showcase Stage with Callout Grid -->
+              <div
+                class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-8"
+              >
+                <div
+                  class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-8 flex items-center justify-center min-h-[360px] border border-outline-variant/20"
+                >
+                  <img
+                    class="w-full max-h-[340px] object-contain"
+                    data-alt="Side profile 3D digital studio rendering of a customized twin cylinder scrambler motorcycle fitted with rugged black upswept exhaust pipes, brown diamond-quilted leather saddle, heavy knobby dual sport tires, black billet headlight guard, on a dark studio turntable background"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLM5jtgh4BFJCKQcuXk3HBdQkpxq_OQ5dbE0X0l8unaH8U0INgHwLDb8beuEVhJduVKZr33PA0APP__f3vgOVIV1q833sPB-ITlgJNrpvNW39pxLGaXVVYbin11Sq_2WZbtOksuDJNR30zvf5esDn7ZPGMHP-HILkRbme71Ncf-SoPpGpg1JOKP4UyJkUBxqvYlp9StKu07D5fmsJWLw6MFqTTHYJN8meYkjdo0S8qQwb2FtSHakXn"
+                  />
+                </div>
+                <!-- 3 Curated Genuine Accessories -->
+                <div class="lg:col-span-4 space-y-4">
+                  <span
+                    class="font-label-sm text-label-sm uppercase tracking-widest text-outline block"
+                    >Featured Accessories</span
+                  >
+                  <div
+                    class="p-4 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-center gap-4 hover:border-primary/40 transition-colors"
+                  >
+                    <div
+                      class="w-14 h-14 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0"
+                    >
+                      <img
+                        class="w-full h-full object-cover"
+                        data-alt="Close up photograph of brushed stainless steel slip-on motorcycle exhaust silencers with turned brass end caps"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3xDtZhNl1gYi88ULBOwFTbOx5ynq57kRDRiPAGCC0A5tTjG71jwkcs-XuH-HWMqhoZaDCdmxCDNBdySAGYEa1OpVktFs7Z7tjA0o3BcV9oWx3CGUBP7zX2fvqJnmM91khR88jfIb7noepWKV5cMKza3LFIuvQRbp7-PNZoCvaEAurde1ADMOpTxWx_EHtQFP-9bUK9cLCpa4z8bkqBSKP1M-CsKPs2F1JsfuaP0eVRZWhQZF99aDo"
+                      />
+                    </div>
+                    <div class="flex-1">
+                      <h5
+                        class="font-label-sm text-label-sm uppercase text-on-surface font-bold"
+                      >
+                        Turn-Out Brass Exhausts
+                      </h5>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                      >
+                        -4.5 kg • ECE Street Certified
+                      </p>
+                    </div>
+                    <span
+                      class="font-label-sm text-label-sm text-primary font-bold"
+                      >+$540</span
+                    >
+                  </div>
+                  <div
+                    class="p-4 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-center gap-4 hover:border-primary/40 transition-colors"
+                  >
+                    <div
+                      class="w-14 h-14 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0"
+                    >
+                      <img
+                        class="w-full h-full object-cover"
+                        data-alt="Macro texture view of diamond-quilted cognac brown bridle leather motorcycle touring bench seat with brass rivet details"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_tMU8hMWL9R6g9T9Y2zGgpAGDwndUavKSHJVi_kXOV8pz1EtcGVgw0CWYEhHTsPhTCpwS3NU4c1NfBWFAEhk7EZpATT5jEIzym6hd-Aq_fwNYOP0b1IpO9lQX6gmh3_-sFs8ffZEKvqZ9EKceP2lhTtuISu-qqFe-HB_LZ1cC5-WHvgFZyWRzur-1SWs3GmBHsDDjmgWQAxDsPx1akxTnHEjoCYklGbdpVvF83eYVyknlhjpoDGjH"
+                      />
+                    </div>
+                    <div class="flex-1">
+                      <h5
+                        class="font-label-sm text-label-sm uppercase text-on-surface font-bold"
+                      >
+                        Quilted Cognac Saddle
+                      </h5>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                      >
+                        Dual-density 3D gel inserts
+                      </p>
+                    </div>
+                    <span
+                      class="font-label-sm text-label-sm text-primary font-bold"
+                      >+$280</span
+                    >
+                  </div>
+                  <div
+                    class="p-4 bg-surface-container-low rounded-xl border border-outline-variant/30 flex items-center gap-4 hover:border-primary/40 transition-colors"
+                  >
+                    <div
+                      class="w-14 h-14 rounded-lg bg-surface-container-lowest overflow-hidden shrink-0"
+                    >
+                      <img
+                        class="w-full h-full object-cover"
+                        data-alt="High quality machined matte black anodized aluminum mesh protective headlamp grill for a classic round motorcycle headlight"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZjNCQwkpgbW4Q6mz_UG6k_ZzTKv_LSsmzCAprOdn2gz5r2lt_2JsNfI3AISIdPPWDeDo77ID6NOIZ0EoHqg12UIT89x8ju-7TAZ5FWfZynivxLpOM7vn5UhR0BXKNAyE0gCrVAUBXZvxt6Sk9xohVOZyOogroF5lOwY6LkdQI3TH_ITZW9UVQ62D1JazOs4MUdfy3mGimQtZZVfIo4g8UVfG_samfCm_vcJ2zhl0NkhHbyonrSDp4"
+                      />
+                    </div>
+                    <div class="flex-1">
+                      <h5
+                        class="font-label-sm text-label-sm uppercase text-on-surface font-bold"
+                      >
+                        Billet Headlamp Grille
+                      </h5>
+                      <p
+                        class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                      >
+                        CNC Machined Aerospace Alloy
+                      </p>
+                    </div>
+                    <span
+                      class="font-label-sm text-label-sm text-primary font-bold"
+                      >+$115</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 5: Global Brotherhood & Curated Expeditions -->
+        <section
+          class="w-full bg-surface-container-lowest py-24 border-b border-outline-variant/20"
+        >
+          <div
+            class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop space-y-12"
+          >
+            <div
+              class="flex flex-col md:flex-row md:items-end justify-between gap-6"
+            >
+              <div class="space-y-2">
+                <span
+                  class="font-label-sm text-label-sm uppercase tracking-widest text-primary block"
+                  >Global Rider Guild</span
+                >
+                <h2
+                  class="font-headline-lg text-3xl sm:text-4xl text-on-surface font-normal"
+                >
+                  Brotherhood &amp; Expeditions
+                </h2>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant max-w-xl font-light"
+                >
+                  Organized mountain journeys and coastal gatherings across 62
+                  countries.
+                </p>
+              </div>
+              <a
+                class="inline-flex items-center gap-2 font-label-md text-label-md uppercase tracking-wider text-primary hover:text-surface-tint font-bold transition-colors"
+                href="#"
+              >
+                <span>View All 2025 Expeditions</span>
+                <span class="material-symbols-outlined text-[16px]"
+                  >chevron_right</span
+                >
+              </a>
+            </div>
+            <!-- 3 Striking Rally Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Expedition 1 -->
+              <div
+                class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 flex flex-col justify-between group shadow-lg"
+              >
+                <div class="relative h-60 w-full overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Group of five adventure classic motorcycle riders navigating a steep narrow rocky mountain mountain pass in Ladakh Himalayas with towering snowcapped mountains and colorful Buddhist prayer flags fluttering in wind"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdIEVz-6ZlWo82yp-Gbnpm_sMv74VvEyoTbIgBtplJk5KsrraK90wajycsfrfHmMabz_-prrY3PcuunDVNwQzGA8puG5toZElOhpAkqDbdANNHQjnDiXoFgu3mlHRgfQKS0zcqU05E77Mw2QovrhqnNgKlHo_zSEvd_El7KoOwCW_lVJ5D41CqqjCtnjJbXj9yXl_Pb-bVYsYfIIye2dippjdhB0kiqwCwa2SPwGiPne7QmRp_-nQi"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"
+                  ></div>
+                </div>
+                <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                  <div>
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-primary block"
+                      >August 10 – 24, 2025</span
+                    >
+                    <h3
+                      class="font-headline-sm text-xl text-on-surface font-semibold mt-1"
+                    >
+                      The Himalayan Odyssey
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant font-light mt-2"
+                    >
+                      14 Days, 2,800 km crossing Khardung La pass at 17,982 ft
+                      altitude with factory technical backup.
+                    </p>
+                  </div>
+                  <div
+                    class="pt-4 border-t border-outline-variant/20 flex items-center justify-between"
+                  >
+                    <span
+                      class="font-label-sm text-label-sm uppercase text-outline"
+                      >High Altitude Route</span
+                    >
+                    <a
+                      class="px-4 py-2 bg-primary text-on-primary rounded font-label-sm text-label-sm uppercase font-bold hover:bg-surface-tint transition-colors"
+                      href="#"
+                      >Register</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Expedition 2 -->
+              <div
+                class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 flex flex-col justify-between group shadow-lg"
+              >
+                <div class="relative h-60 w-full overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Vibrant nighttime motorcycle music festival gathering on the tropical beaches of Goa, thousands of custom cafe racers and cruisers illuminated by bonfires, neon stage lights, dirt track flat track racing in foreground"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqFexdGXnAbNJJ_z32Cu__z02xOiMbwYize-DCke-zdRkRRvNd0Zsa0D8G3whIs27Km8Ej64WTQeGnDRndLl9WBA0LaQXq9Jwby_O9-WOC2VJ2jsxOdR9fYJBodxysa9qbkGi6vBcjs8t40Dyl59_9WSokLTHWLr-BMVOwc36wm8NNNVnRsYDRg4VGvcHbB9j7_v2hflI_ZOGvTx4YEKTpxIzm6vyDTQAzxxuutih_lFzWhQBRwsk5"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"
+                  ></div>
+                </div>
+                <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                  <div>
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-primary block"
+                      >November 21 – 23, 2025</span
+                    >
+                    <h3
+                      class="font-headline-sm text-xl text-on-surface font-semibold mt-1"
+                    >
+                      Rider Mania &amp; Moto Fest
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant font-light mt-2"
+                    >
+                      Goa Coastline. Dirt-track scrambles, custom builder
+                      galleries, and live acoustic music stages.
+                    </p>
+                  </div>
+                  <div
+                    class="pt-4 border-t border-outline-variant/20 flex items-center justify-between"
+                  >
+                    <span
+                      class="font-label-sm text-label-sm uppercase text-outline"
+                      >Coastal Gathering</span
+                    >
+                    <a
+                      class="px-4 py-2 bg-primary text-on-primary rounded font-label-sm text-label-sm uppercase font-bold hover:bg-surface-tint transition-colors"
+                      href="#"
+                      >Get Pass</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- Expedition 3 -->
+              <div
+                class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/30 flex flex-col justify-between group shadow-lg"
+              >
+                <div class="relative h-60 w-full overflow-hidden">
+                  <img
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    data-alt="Classic scrambler and twin cruiser motorcycles parked near an ancient Scottish stone castle ruins on a dramatic cliff overlooking a stormy misty Atlantic ocean shoreline under moody overcast sky"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh5Y45t7UeykgP55wPfhom4W1AwS0_iFmrN7ETasOMJanqfIHK7uwrjQtsTPbeG3X68wvfCDqmxyadG9SJB1lCbxHvMjaILsV5ikmzKf1B1eIxz_seFGFVVAd5FysMfwtKB3tjKa3kvTkLY9UzCCPsIkZgEG1pLl8g_bsV2sZRYEV-bI6AF4jg7S1gxsxVjQxxP9dMfw5R4gnfTGXiZRjPphw35HY5JY4gXa95tfS_ytgEWqVopKXD"
+                  />
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-surface-container via-transparent to-transparent"
+                  ></div>
+                </div>
+                <div class="p-6 space-y-4 flex-1 flex flex-col justify-between">
+                  <div>
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-wider text-primary block"
+                      >September 4 – 10, 2025</span
+                    >
+                    <h3
+                      class="font-headline-sm text-xl text-on-surface font-semibold mt-1"
+                    >
+                      Highland Coast 500 Run
+                    </h3>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant font-light mt-2"
+                    >
+                      Inverness to Applecross Pass. 516 miles of dramatic
+                      Scottish coastal curves and single-track roads.
+                    </p>
+                  </div>
+                  <div
+                    class="pt-4 border-t border-outline-variant/20 flex items-center justify-between"
+                  >
+                    <span
+                      class="font-label-sm text-label-sm uppercase text-outline"
+                      >516 Mile Tour</span
+                    >
+                    <a
+                      class="px-4 py-2 bg-primary text-on-primary rounded font-label-sm text-label-sm uppercase font-bold hover:bg-surface-tint transition-colors"
+                      href="#"
+                      >Register</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- SECTION 6: Find Your Experience Centre -->
+        <section class="w-full bg-background py-24">
+          <div
+            class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop space-y-12"
+          >
+            <div
+              class="bg-surface-container rounded-2xl p-8 lg:p-12 border border-outline-variant/30 shadow-2xl"
+            >
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Search & Studios List -->
+                <div class="lg:col-span-6 space-y-6">
+                  <div class="space-y-2">
+                    <span
+                      class="font-label-sm text-label-sm uppercase tracking-widest text-primary block"
+                      >Authorized Studios</span
+                    >
+                    <h2
+                      class="font-headline-lg text-3xl sm:text-4xl text-on-surface font-normal"
+                    >
+                      Find An Experience Centre
+                    </h2>
+                    <p
+                      class="font-body-md text-body-md text-on-surface-variant font-light"
+                    >
+                      Visit our bespoke ateliers to inspect bare-metal finishes,
+                      test ride the full fleet, and configure your motorcycle.
+                    </p>
+                  </div>
+                  <!-- Clean Search Bar -->
+                  <form class="flex flex-col sm:flex-row gap-3 pt-2">
+                    <div class="relative flex-1">
+                      <span
+                        class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]"
+                        >pin_drop</span
+                      >
+                      <input
+                        class="w-full bg-surface-container-lowest text-on-surface pl-11 pr-4 py-3 rounded border border-outline-variant/40 focus:border-primary focus:outline-none font-body-sm text-body-sm"
+                        placeholder="Enter City, Postal Code, or Country..."
+                        type="text"
+                      />
+                    </div>
+                    <button
+                      class="px-6 py-3 bg-primary text-on-primary font-label-md text-label-md uppercase font-bold rounded hover:bg-surface-tint transition-colors shrink-0"
+                      type="button"
+                    >
+                      Locate Studio
+                    </button>
+                  </form>
+                  <!-- 3 Flagship Studios -->
+                  <div class="space-y-3 pt-2">
+                    <div
+                      class="p-4 bg-surface-container-low rounded-xl border border-outline-variant/20 flex items-center justify-between hover:border-primary/40 transition-colors"
+                    >
+                      <div>
+                        <h4
+                          class="font-label-md text-label-md uppercase text-on-surface font-bold"
+                        >
+                          Shoreditch Flagship
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                        >
+                          14 Redchurch St, London E2 7DD, United Kingdom
+                        </p>
+                      </div>
+                      <a
+                        class="font-label-sm text-label-sm uppercase text-primary font-bold hover:underline"
+                        href="#"
+                        >Book Ride →</a
+                      >
+                    </div>
+                    <div
+                      class="p-4 bg-surface-container-low rounded-xl border border-outline-variant/20 flex items-center justify-between hover:border-primary/40 transition-colors"
+                    >
+                      <div>
+                        <h4
+                          class="font-label-md text-label-md uppercase text-on-surface font-bold"
+                        >
+                          Bandra Heritage Garage
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                        >
+                          Pali Hill, Bandra West, Mumbai 400050, India
+                        </p>
+                      </div>
+                      <a
+                        class="font-label-sm text-label-sm uppercase text-primary font-bold hover:underline"
+                        href="#"
+                        >Book Ride →</a
+                      >
+                    </div>
+                    <div
+                      class="p-4 bg-surface-container-low rounded-xl border border-outline-variant/20 flex items-center justify-between hover:border-primary/40 transition-colors"
+                    >
+                      <div>
+                        <h4
+                          class="font-label-md text-label-md uppercase text-on-surface font-bold"
+                        >
+                          Melrose Atelier
+                        </h4>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                        >
+                          7812 Melrose Ave, Los Angeles, CA 90046, USA
+                        </p>
+                      </div>
+                      <a
+                        class="font-label-sm text-label-sm uppercase text-primary font-bold hover:underline"
+                        href="#"
+                        >Book Ride →</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Location Map Graphic -->
+                <div class="lg:col-span-6">
+                  <div
+                    class="relative w-full h-80 sm:h-96 rounded-xl overflow-hidden border border-outline-variant/30 shadow-inner bg-surface-container-lowest"
+                  >
+                    <div
+                      class="w-full h-full bg-cover bg-center"
+                      style="
+                        background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuATfY_V7c2qgTgOUIZ53x-UgLb8bnhl4g-5WiHbVuQxFRqIo5xVl-NSnVlGmnQYxMZ2njE6FU5tMt7aY-EQEvwhpZ1v7H28SWOAhUdeMAeRqhQSV5PQno3douB1g_V_23K6Mi9Zw90Hu8utwLG81HGK9mP93_dgF0QXlXITo-tDy_rHxsBY-T0NRk4-giBoiiZuS30RHqyrZS2STwdj83Vi5seKhFVKMiTkAXJxbFWx2qXMV9EhCg-P&quot;);
+                      "
+                    ></div>
+                    <div
+                      class="absolute inset-0 bg-surface/30 backdrop-blur-[1px] pointer-events-none"
+                    ></div>
+                    <div
+                      class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center"
+                    >
+                      <div
+                        class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-2xl"
+                      >
+                        <span class="material-symbols-outlined text-[24px]"
+                          >two_wheeler</span
+                        >
+                      </div>
+                      <div
+                        class="mt-2 bg-surface-container-lowest/95 backdrop-blur-md px-3.5 py-1.5 rounded border border-outline-variant/30 text-center shadow-lg"
+                      >
+                        <p
+                          class="font-label-sm text-label-sm uppercase text-primary font-bold"
+                        >
+                          Shoreditch Atelier Hub
+                        </p>
+                        <p
+                          class="font-body-sm text-body-sm text-on-surface-variant"
+                        >
+                          Fleet Available for Immediate Test Rides
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- VIP Concierge Doorstep Test Ride Banner -->
+              <div
+                class="mt-8 p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-6"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0 border border-primary/20"
+                  >
+                    <span class="material-symbols-outlined text-[24px]"
+                      >home_pin</span
+                    >
+                  </div>
+                  <div>
+                    <h4
+                      class="font-label-md text-label-md uppercase text-on-surface font-bold"
+                    >
+                      VIP Doorstep Concierge Test Ride
+                    </h4>
+                    <p
+                      class="font-body-sm text-body-sm text-on-surface-variant font-light"
+                    >
+                      Prefer testing on your local roads? Our transport brings
+                      the motorcycle directly to your private driveway in select
+                      metro areas.
+                    </p>
+                  </div>
+                </div>
+                <button
+                  class="px-6 py-2.5 rounded bg-surface-container-high border border-outline-variant/40 text-on-surface hover:text-primary hover:border-primary font-label-sm text-label-sm uppercase font-bold shrink-0 transition-colors"
+                >
+                  Request Doorstep Delivery
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer
+      class="w-full bg-surface-container-lowest text-on-surface-variant border-t border-outline-variant/30"
+    >
+      <div
+        class="max-w-7xl mx-auto px-margin-mobile lg:px-margin-desktop py-space-xl"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-lg pb-space-xl border-b border-outline-variant/20"
+        >
+          <div class="lg:col-span-2 space-y-space-md">
+            <div class="flex items-center gap-space-sm">
+              <span class="font-headline-md text-headline-md text-primary"
+                >Iron &amp; Embers</span
+              >
+            </div>
+            <p
+              class="font-body-md text-body-md text-on-surface-variant max-w-sm"
+            >
+              Handcrafted Spirit. Pure Motoring Heritage Since 1901. Forged in
+              steel, guided by open horizons, and dedicated to the pure thump of
+              classic mechanical engineering.
+            </p>
+            <div class="pt-space-sm">
+              <span
+                class="font-label-sm text-label-sm uppercase tracking-widest text-outline block mb-space-xs"
+                >The Thump Dispatch - Join the Guild</span
+              >
+              <form class="flex max-w-md items-center">
+                <input
+                  class="bg-surface-container-low text-on-surface px-4 py-2 font-body-sm text-body-sm rounded-l border border-outline-variant/50 focus:border-primary focus:outline-none w-full"
+                  placeholder="Enter your correspondence email..."
+                  type="email"
+                /><button
+                  class="bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary font-label-sm text-label-sm px-4 py-2 uppercase tracking-wider font-bold rounded-r transition-colors shrink-0"
+                  type="button"
+                >
+                  Enlist
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="space-y-space-sm">
+            <h4
+              class="font-label-md text-label-md uppercase tracking-wider text-primary"
+            >
+              Motorcycles
+            </h4>
+            <ul class="space-y-space-xs font-body-sm text-body-sm">
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="motorcycles"
+                  href="#"
+                  >The Highway Cruiser</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="motorcycles"
+                  href="#"
+                  >Urban Roadster 650</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="motorcycles"
+                  href="#"
+                  >Continental Cafe Racer</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="motorcycles"
+                  href="#"
+                  >Frontier Adventure Dual</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="custom-atelier"
+                  href="#"
+                  >Custom Atelier Configurator</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-space-sm">
+            <h4
+              class="font-label-md text-label-md uppercase tracking-wider text-primary"
+            >
+              Craft &amp; Gear
+            </h4>
+            <ul class="space-y-space-xs font-body-sm text-body-sm">
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="gear-and-accessories"
+                  href="#"
+                  >Genuine Accessories</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="gear-and-accessories"
+                  href="#"
+                  >Handcrafted Bridle Saddles</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="gear-and-accessories"
+                  href="#"
+                  >Heritage Riding Waxcoats</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="service-and-assistance"
+                  href="#"
+                  >Service &amp; Roadside Care</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="service-and-assistance"
+                  href="#"
+                  >Technical Workshop Manuals</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-space-sm">
+            <h4
+              class="font-label-md text-label-md uppercase tracking-wider text-primary"
+            >
+              The Guild
+            </h4>
+            <ul class="space-y-space-xs font-body-sm text-body-sm">
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="heritage-stories"
+                  href="#"
+                  >1901 Founding Provenance</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="rides-community"
+                  href="#"
+                  >Global Himalayan Rallies</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="rides-community"
+                  href="#"
+                  >The One-Ride Brotherhood</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="locate-dealer"
+                  href="#"
+                  >Flagship Atelier Showrooms</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:text-on-surface transition-colors"
+                  data-path="book-test-ride"
+                  href="#"
+                  >Private Test Expeditions</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-sm text-label-sm"
+        >
+          <div class="flex flex-wrap items-center gap-space-md">
+            <span
+              >© 1901–2025 Iron &amp; Embers Motor Co. All rights
+              reserved.</span
+            ><a class="hover:text-on-surface transition-colors" href="#"
+              >Chassis Registry Legal</a
+            ><a class="hover:text-on-surface transition-colors" href="#"
+              >Data Stewardship</a
+            ><a class="hover:text-on-surface transition-colors" href="#"
+              >Warranty Terms</a
+            >
+          </div>
+          <div class="flex items-center gap-space-md">
+            <span class="flex items-center gap-1 text-on-surface-variant"
+              ><span class="material-symbols-outlined text-[16px]">public</span>
+              Global Dispatch: UK &amp; International</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        border: 1px solid;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* Fr = fraction -> available space of the parent element 
+            1080px -> 3fr
+        
+        */
+      }
+      header {
+        height: 10vh;
+        grid-column: 1/4;
+      }
+      nav {
+        height: 10vh;
+        grid-column: 1/4;
+      }
+      main {
+        height: 80vh;
+        width: 70vw;
+      }
+      aside {
+        height: 80vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>header</header>
+      <nav>nav</nav>
+      <aside>side navigation 1</aside>
+      <main>main content</main>
+      <aside>side navigation 2</aside>
+    </div>
+  </body>
+</html>

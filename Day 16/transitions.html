@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+        /* transform: rotate(30deg); */
+        transition: transform 0.5s ease;
+        animation: rotate 5s ease-in-out forwards infinite;
+      }
+      .card:hover {
+        /* transform: scale(0.1); */
+        /* transform: translateX(-20px); */
+        /* transform: translateY(-40px); */
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(90deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        75% {
+          transform: rotate(-180deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        Transform
+           rotate ->  0deg -> 360deg
+           translate -> X, Y - X positive , X negative
+           scale - (zoom in, out)
+
+        Transition
+            target
+            duration
+            timing function 
+                    accelaration , decelaration
+                    ease -> accelarate
+                    ease-in -> accelarate , constant
+                    ease-out -> accelarate , decelarate
+                    ease-in-out -> accelarate , contant , decelarate
+                    cubic-bezier()
+
+
+        animation
+           
+    
+    -->
+
+    <div class="card">card</div>
+  </body>
+</html>

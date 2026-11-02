@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(9, 1, 33);
+  color: white;
+}
+
+.brand-icon {
+  width: 10%;
+}
+.brand-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location_text {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.location_text button {
+  border: none;
+  outline: none;
+  background-color: rgb(9, 1, 33);
+  font-weight: bold;
+  color: white;
+}
+
+.search-bar {
+  /* border: 1px solid white; */
+  width: 40%;
+  height: 100%;
+}
+
+.search-box {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.search-box input {
+  width: 85%;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+.search-box select {
+  height: 40px;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: 1px solid gray;
+  outline: none;
+  background-color: gainsboro;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.search-box span {
+  background-color: rgb(206, 148, 12);
+  height: 40px;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.Language {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+.Language div {
+  height: 40px;
+  width: 100%;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.Language div img {
+  height: 100%;
+  width: 50%;
+}
+.sign_in button {
+  background-color: rgb(9, 1, 33);
+  color: white;
+  font-weight: bold;
+  border: none;
+  outline: none;
+}
+.order_return {
+  display: flex;
+  flex-direction: column;
+}
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(9, 1, 33);
+  color: white;
+  height: 40px;
+  font-size: 1.2rem;
+}
+nav {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+.menu,
+.sale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sale {
+  font-weight: bold;
+}
+.deals {
+  /* border: 1px solid; */
+  height: 460px;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+.deals .cards {
+  /* border: 1px solid; */
+  height: 100%;
+  width: 18%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  box-shadow: 0 0 4px gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+}
+.card-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_1 {
+  background-image: url(facewash.png);
+}
+.card_2 {
+  background-image: url(backpack.png);
+}
+.card_3 {
+  background-image: url(jeans.png);
+}
+.card_4 {
+  background-image: url(earbuds.png);
+}
+.card_5 {
+  background-image: url(kurta.png);
+}
+
+.offers {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 20px;
+}
+
+.offer-card {
+  /* border: 1px solid; */
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 0 4px gray;
+  background-image: linear-gradient(to right, orange, rgb(255, 89, 0));
+}
+
+.content {
+  display: flex;
+}
+.content-1 div {
+  display: flex;
+  flex-direction: column;
+}
+.content-1 div img {
+  width: 200px;
+  margin-left: 10px;
+}

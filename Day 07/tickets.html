@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Noto+Sans+Khudawadi&family=Sekuya&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Black Ops One", system-ui;
+        text-transform: uppercase;
+        color: brown;
+        text-align: center;
+      }
+      body {
+        height: 100vh;
+        /* additional pro */
+        display: flex;
+        /* Block level inline  */
+        justify-content: center;
+        align-items: center;
+      }
+
+      .main {
+        /* border: 2px solid; */
+        padding: 10px;
+        background-color: rgba(235, 203, 75, 0.76);
+        outline: 15px dotted white;
+        outline-offset: -8px;
+        box-shadow: 1px 1px 4px gray;
+      }
+      p {
+        /* border: 2px solid black;  */
+        /* 
+                solid
+                dotted
+                dashed
+                ridge
+                groove
+                double
+            
+            */
+      }
+
+      .container {
+        border: 4px double;
+        height: 150px;
+        width: 600px;
+        background-color: rgba(235, 203, 75, 0.76);
+
+        /* additional pro */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .img {
+        background-image: url(image-removebg-preview.png);
+        height: 100%;
+        background-size: 70% 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* additional pro */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        color: brown;
+      }
+      .content {
+        width: 46%;
+        border-right: 10px dotted white;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .title-content {
+        /* additional pro */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 1px solid; */
+        width: 100%;
+        /* border: 1px solid; */
+      }
+      .side-content {
+        transform: rotate(-90deg);
+        width: 20%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="img">
+          <div class="first">
+            <span class="material-symbols-outlined"> star_rate </span>
+            <span class="material-symbols-outlined"> star_rate </span>
+            <span class="material-symbols-outlined"> star_rate </span>
+            <span class="material-symbols-outlined"> star_rate </span>
+            <span class="material-symbols-outlined"> star_rate </span>
+            <span class="material-symbols-outlined"> star_rate </span>
+            <span class="material-symbols-outlined"> star_rate </span>
+          </div>
+          <div class="second">
+            <span class="material-symbols-outlined"> star_rate </span>
+            <span class="material-symbols-outlined"> star_rate </span>
+            <span class="material-symbols-outlined"> star_rate </span>
+            <span class="material-symbols-outlined"> star_rate </span>
+            <span class="material-symbols-outlined"> star_rate </span>
+            <span class="material-symbols-outlined"> star_rate </span>
+            <span class="material-symbols-outlined"> star_rate </span>
+          </div>
+        </div>
+        <div class="content">
+          <div class="title">
+            <h1>Cinema</h1>
+            <h4>Ticket</h4>
+          </div>
+          <div class="title-content">
+            <div class="title-content-first">
+              <p style="color: black">December 8</p>
+              <span>7:30 PM</span>
+            </div>
+            <div class="title-content-second">
+              <p style="color: black">Row</p>
+              <span>14</span>
+            </div>
+            <div class="title-content-third">
+              <p style="color: black">Seat</p>
+              <span>22</span>
+            </div>
+          </div>
+        </div>
+        <div class="side-content">
+          <p>Admit One</p>
+          <p>No. 12345678</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

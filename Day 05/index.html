@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        entities 
+
+        list 
+            ordered list 
+            unordered list 
+            definition list
+                term 
+                description
+            
+            dl
+                dt
+                dd
+
+        nested list 
+
+            Shopping 
+            grocery     vegitable    fruits
+
+        ul
+            1. grocery
+                - sugar
+                - rice
+                - peanut
+                - milk
+                - tea powder
+                - washing powder
+
+            2. vegitable
+                - potato
+                - tomato
+                - sweet potato
+                - brinjal
+                - cabbage
+                
+            3. fruits
+                - apple
+                - banana
+                - cherry
+                - mango
+                - orange
+
+
+        ul
+
+
+
+    Tables
+        to structure the data in a row and columns we use tables
+
+
+    students 
+
+    roll_no name
+                ->  list 
+                      1.   ravi
+                -> object ( key : value)
+                    roll_no : ravi
+                -> table
+                roll       name
+                1          ravi
+
+    row
+        - a single record in a table is called row
+    column
+        - identifier / attribute for specific value
+    cell
+        - 
+
+
+    <table> used to create the table
+        head -> column names 
+        body -> rows / records
+
+    
+    -->
+    <!-- unordered nested list -->
+    <ul>
+      <li>Grocery</li>
+      <ul>
+        <li>Sugar</li>
+        <li>rice</li>
+        <li>Peanut</li>
+        <li>Milk</li>
+        <li>Tea powder</li>
+        <li>Washing powder</li>
+      </ul>
+      <li>Vegitables</li>
+
+      <ul>
+        <li>Potato</li>
+        <li>Tomato</li>
+        <li>sweet potato</li>
+        <li>brinjal</li>
+        <li>cabbage</li>
+      </ul>
+
+      <li>Fruits</li>
+      <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+        <li>Mango</li>
+        <li>Orange</li>
+      </ul>
+    </ul>
+
+    <!-- 
+    
+    ordered nested list 
+     
+        combine
+    -->
+
+    <!-- nested defintion list -->
+
+    <!-- 
+    
+        databases
+        mysql - it is relational database management system
+    -->
+
+    <dl>
+      <dt>Database</dt>
+      <dd>
+        <dl>
+          <dt>Oracle</dt>
+          <dd>Oracle is relational database management system</dd>
+          <dt>MySQL</dt>
+          <dd>It is a relational database management system</dd>
+          <dt>MongoDb</dt>
+          <dd>non relational database</dd>
+        </dl>
+      </dd>
+      <dt>Programming Language</dt>
+      <dd>
+        <dl>
+          <dt>Java</dt>
+          <dd>Java is a high level, object oriented programming language</dd>
+          <dt>Python</dt>
+          <dd>
+            Python is a high level, interpreted, multi paradigm programming
+            language
+          </dd>
+        </dl>
+      </dd>
+      <dt>Scripting Language</dt>
+      <dd>
+        <dl>
+          <dt>JavaScript</dt>
+          <dd>
+            JavaScript is a high level, interpreted, multi paradigm programming
+            / scripting language
+          </dd>
+          <dt>PHP</dt>
+          <dd>PHP is general purpose scripting language</dd>
+        </dl>
+      </dd>
+    </dl>
+
+    <!-- creating table  -->
+    <!-- 
+        border attribute is used to add the border to the table
+     -->
+    <table border="1">
+      <thead>
+        <!-- th used to add the table headings -->
+        <th>roll no</th>
+        <th>name</th>
+      </thead>
+      <tbody>
+        <!-- tr used to create table row -->
+        <tr>
+          <!-- adds the data to the table  -->
+          <td>1</td>
+          <td>Ravi</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rohit</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <!-- Using height and width attributes with table -->
+    <table border="1" height="200px" width="50%" style="text-align: center">
+      <thead>
+        <!-- th used to add the table headings -->
+        <th>roll no</th>
+        <th>name</th>
+      </thead>
+      <tbody>
+        <!-- tr used to create table row -->
+        <tr>
+          <!-- adds the data to the table  -->
+          <td>1</td>
+          <td>Ravi</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rohit</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <!-- cellspacing and cellpadding attributes -->
+    <table
+      border="1"
+      cellspacing="0"
+      cellpadding="40"
+      height="200px"
+      width="50%"
+      style="text-align: center"
+    >
+      <thead>
+        <!-- th used to add the table headings -->
+        <th>roll no</th>
+        <th>name</th>
+      </thead>
+      <tbody>
+        <!-- tr used to create table row -->
+        <tr>
+          <!-- adds the data to the table  -->
+          <td>1</td>
+          <td>Ravi</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rohit</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- rowspan & colspan attribute 
+     
+    july 26
+
+    id      name    lastname  address  mobile   age  batch     course     fees 
+    
+    
+    -->
+    <br />
+    <table border="1" width="100%" height="200px">
+      <thead>
+        <th>id</th>
+        <th colspan="2">Full Name</th>
+        <!-- <th>lastname</th> -->
+        <th>address</th>
+        <th>mobile</th>
+        <th>age</th>
+        <th>batch</th>
+        <th>course</th>
+        <th>fees</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>Harshal</td>
+          <td>Tapre</td>
+          <td>Shegaon</td>
+          <td>1234</td>
+          <td>20</td>
+          <td rowspan="4">July 26</td>
+          <td>Java</td>
+          <td>1234</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Yogesh</td>
+          <td>Patil</td>
+          <td>Jalgaon</td>
+          <td>123435</td>
+          <td>21</td>
+          <!-- <td>July 26</td> -->
+          <td>Python</td>
+          <td>213</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Avinash</td>
+          <td>Kale</td>
+          <td>Narhe</td>
+          <td>123456765</td>
+          <td>28</td>
+          <!-- <td>July 26</td> -->
+          <td rowspan="2">Java</td>
+          <td rowspan="2">1234</td>
+        </tr>
+        <tr>
+          <td>104</td>
+          <td>Shubham</td>
+          <td>Toke</td>
+          <td>pathri</td>
+          <td>13454</td>
+          <td>45</td>
+          <!-- <td>July 26</td> -->
+          <!-- <td>Java</td> -->
+          <!-- <td>1234</td> -->
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 
+        
+    annual exam Timetable
+    
+    -->
+
+    <br />
+    <br />
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th colspan="7">Annual Examination - theory exams</th>
+        </tr>
+        <tr>
+          <th>Date</th>
+          <th>class</th>
+          <th>9-10 AM</th>
+          <th>10-11 AM</th>
+          <th>11-12 PM</th>
+          <th>12-1 PM</th>
+          <th>1-2 PM</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="5">12 march 2025</td>
+          <td>class 6</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+          <td rowspan="5">Lunch break</td>
+          <td>Hindi</td>
+        </tr>
+        <tr>
+          <td>class 6</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+
+          <td>Hindi</td>
+        </tr>
+        <tr>
+          <td>class 6</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+
+          <td>Hindi</td>
+        </tr>
+        <tr>
+          <td>class 6</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+
+          <td>Hindi</td>
+        </tr>
+        <tr>
+          <td>class 6</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+
+          <td>Hindi</td>
+        </tr>
+        <tr>
+          <td rowspan="5">12 march 2025</td>
+          <td>class 6</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+          <td rowspan="5">Lunch break</td>
+          <td>Hindi</td>
+        </tr>
+        <tr>
+          <td>class 6</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+
+          <td>Hindi</td>
+        </tr>
+        <tr>
+          <td>class 6</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+
+          <td>Hindi</td>
+        </tr>
+        <tr>
+          <td>class 6</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+
+          <td>Hindi</td>
+        </tr>
+        <tr>
+          <td>class 6</td>
+          <td>Math</td>
+          <td>Science</td>
+          <td>English</td>
+
+          <td>Hindi</td>
+        </tr>
+
+        <tr>
+          <th colspan="7">Practical Examinations</th>
+        </tr>
+
+        <tr>
+          <th>Date</th>
+          <th>Class</th>
+          <th colspan="5">Practical Subject</th>
+        </tr>
+        <tr>
+          <td>15 March 2025</td>
+          <td>class 8</td>
+          <td colspan="5">Science</td>
+        </tr>
+        <tr>
+          <td>15 March 2025</td>
+          <td>class 8</td>
+          <td colspan="5">Science</td>
+        </tr>
+        <tr>
+          <td>15 March 2025</td>
+          <td>class 8</td>
+          <td colspan="5">Science</td>
+        </tr>
+        <tr>
+          <td>15 March 2025</td>
+          <td>class 8</td>
+          <td colspan="5">Science</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 
+    
+        Task
+            web layout 
+                - header
+                - sidebar
+                - footer
+                - main content 
+            using tables
+    
+    -->
+  </body>
+</html>

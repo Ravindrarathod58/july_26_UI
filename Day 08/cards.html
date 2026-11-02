@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: monospace;
+      }
+      body {
+        padding: 20px;
+      }
+      h1 {
+        text-decoration: underline;
+        margin-bottom: 10px;
+      }
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+      .card {
+        box-shadow: 0px 0px 5px gray;
+        width: 15%;
+        height: 200px;
+        border-radius: 20px;
+        margin-top: 10px;
+        background-color: white;
+        /* addition pro */
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.5s ease-in-out;
+      }
+      .card p {
+        font-size: 2rem;
+      }
+
+      .card:hover {
+        transform: translateY(-20px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Languages</h1>
+    <div class="container">
+      <div class="card">
+        <i class="devicon-java-plain" style="font-size: 5rem; color: red"></i>
+        <p>Java</p>
+      </div>
+      <div class="card">
+        <i
+          class="devicon-javascript-plain"
+          style="font-size: 5rem; color: yellow"
+        ></i>
+        <p>JavaScript</p>
+      </div>
+      <div class="card">
+        <i
+          class="devicon-python-plain"
+          style="font-size: 5rem; color: blue"
+        ></i>
+        <p>Python</p>
+      </div>
+      <div class="card">
+        <i
+          class="devicon-mysql-original"
+          style="font-size: 5rem; color: aqua"
+        ></i>
+        <p>MySQL</p>
+      </div>
+      <div class="card">
+        <i
+          class="devicon-cplusplus-plain"
+          style="font-size: 5rem; color: blue"
+        ></i>
+        <p>C++</p>
+      </div>
+      <div class="card">
+        <i
+          class="devicon-html5-plain"
+          style="font-size: 5rem; color: orange"
+        ></i>
+        <p>HTML</p>
+      </div>
+      <div class="card">
+        <i
+          class="devicon-csharp-plain"
+          style="font-size: 5rem; color: blue"
+        ></i>
+        <p>C#</p>
+      </div>
+      <div class="card">
+        <i class="devicon-php-plain" style="font-size: 5rem; color: aqua"></i>
+        <p>PHP</p>
+      </div>
+      <div class="card">
+        <i
+          class="devicon-go-original-wordmark"
+          style="font-size: 5rem; color: blue"
+        ></i>
+        <p>GO</p>
+      </div>
+      <div class="card">
+        <i class="devicon-ruby-plain" style="font-size: 5rem; color: red"></i>
+        <p>Ruby</p>
+      </div>
+      <div class="card">
+        <i
+          class="devicon-kotlin-plain"
+          style="font-size: 5rem; color: rgb(232, 11, 232)"
+        ></i>
+        <p>Kotlin</p>
+      </div>
+      <div class="card">
+        <i class="devicon-dart-plain" style="font-size: 5rem; color: blue"></i>
+        <p>Dart</p>
+      </div>
+    </div>
+  </body>
+</html>

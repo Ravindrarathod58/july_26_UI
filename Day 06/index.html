@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- forms in HTML -->
+
+    <!-- 
+        list
+        tables
+
+
+        User data collect
+
+        login pages
+        registration pages
+        admission forms
+        
+
+    allows to get the data from the user in variaous way
+        text
+        radios checkbox
+        file inputs
+        date
+    
+    it allows to send the data to the backend 
+        submit / login / register / apply
+
+    input type submit
+
+    action attribute
+        backend URL
+    
+    
+
+    login (form) -> action (URL) -> Java , Python(API) -> database
+
+    method
+        http methods
+            get 
+                limited data
+                not secured ( URLs )
+                                    Query parameter
+                https://flikart.com?product_id = 101; expose
+                files not allowed -> bytes
+                to read the data from server
+            post
+                unlimited
+                secured ( request body ) (hidden)
+                    {
+                        key : value;
+                    }
+                files are allowed ( encryption type )
+                to send the data to server
+
+        get
+        post
+        put
+        delete
+        patch
+        update
+
+
+
+
+
+        http://127.0.0.1:5500/Day%2006/index.html
+        http://127.0.0.1:5500/Day%2006/index.html?username=wefsdfs&password=sdfsffwefe
+    
+
+        http://127.0.0.1:5500/Day%2006/index.html
+
+
+    
+    form controls   
+            allows to enter the data
+        
+        textfields
+            text -> input type text
+                    - single line input
+                    - visible
+            password -> input type password
+                    - single line inputs 
+                    - masked -> bullets
+            number -> input type number
+                    - for number inputs
+                    - age, marks, percentage
+                    - max, minimum
+            tel    -> input type tel
+                    - to take the mobile numbers as input
+
+            email  -> input type email
+                    -> @ .
+                    -> basic validation 
+            search -> input type search
+                    -> for search bars
+            URL   -> input type url
+
+            time -> input type time
+                    -> dropdown to select the hh:mm
+
+            datetime -> input type datetime
+                    -> allows to insert the date formats
+                    -> dd/mm/yy ,
+                    
+            datetime-local -> input type datetime-local
+                    -> allows to pick a date from calendor
+
+            week -> input type week
+
+            color -> input type color
+
+            file  -> input type file
+            
+            radio -> input type radio
+
+            checkbox -> input type checkbox
+
+    label
+        -> to label the form controls
+
+    Attributes for Form controls
+        placeholder
+            -> display the dummy text inside the input fields
+        id
+            -> to identify the input field ( CSS, Javascript)
+        class
+            -> to group the multiple elements for styling
+        name
+            -> to identify the input field(backend)
+
+
+
+
+            http://127.0.0.1:5500/Day%2006/index.html
+            http://127.0.0.1:5500/Day%2006/index.html?
+            http://127.0.0.1:5500/Day%2006/index.html?username=sdsdvsdv
+    -->
+
+    <form action="" method="get">
+      <input type="text " id="username" name="username" />
+      <button>Submit</button>
+    </form>
+
+    <form action="" method="post">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        name="username"
+        id="username"
+        placeholder="Enter Username"
+      />
+      <input type="password" name="password" id="password" />
+      <input type="number" min="100" max="200" />
+      <input type="tel" />
+      <input type="email" />
+      <input type="search" />
+      <input type="url" />
+      <input type="time" />
+      <input type="datetime" />
+      <input type="date" />
+      <input type="week" />
+      <input type="color" />
+      <input type="file" />
+
+      <input type="radio" />
+      <input type="checkbox" />
+      <button type="submit">Login</button>
+
+      <!-- 
+        gender
+
+        Male
+        Female
+        Other
+      
+      -->
+
+      <label for=""> <input type="radio" /> Male </label>
+      <input type="radio" /> Female <input type="radio" /> Other
+
+      <!-- 
+      
+        form controls
+        attributes
+        iframes
+      
+      -->
+    </form>
+  </body>
+</html>

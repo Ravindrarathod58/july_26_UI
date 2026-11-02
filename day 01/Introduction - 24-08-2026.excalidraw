@@ -1,0 +1,880 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "aQ0b7LsBdamktYHoDodEu",
+      "type": "text",
+      "x": 780.3382680957419,
+      "y": 12135.885504123551,
+      "width": 4781.2763671875,
+      "height": 6448.607397405259,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9A",
+      "roundness": null,
+      "seed": 1084255263,
+      "version": 1499,
+      "versionNonce": 241418956,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787755500296,
+      "link": null,
+      "locked": false,
+      "text": "Introduction to HTML\n\nHTML is Hypertext markup language\nwhich is developed by tim berners lee in the year 1991\n\nhtml is a language of the web.\n\nWhat is Web?\n    web is collection of resources available through the internet.\n\nInternet\n    internet is network of interconnected systems.\n\nISP -> Internet service provider\nSERVER -> a remote computer system that stores the data of webpages & websites\n\nwebpage\n    webpage is a document written using HTML to structure the content\nwebsite\n    website is a collection of webpages\n\n\n\nClient     Internet (network)  Server\n\nBrowser\n    browser is software that diplays the information written using HTML\n\nURL\n    uniform resource locator which narrows the IP address of the servers\nIP\n    internet protocol unique identifier for the every system that connected to the internet\n\nDNS -> Domain naming servers    100.101.0.1  -> Domain Names\n                                                         100.101.0.1 -> kaywords ( DNS ) \n\n    GoDadyy, Hostingers\n\n\nFilpkart \nhttps://flipkart.com   ->    100.101.0.1\n\nthe process of accessiing the information of the website\n\n\nrequest & response\nrequest is sent by the browsers using the URLS or the webpages\n    \nresponse is the processd data sent back by the servers on the request\n\nClient & server\n\n                DNS Servers\n                                           flipkart.com   :  100.101.0.1",
+      "fontSize": 95.53492440600384,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Introduction to HTML\n\nHTML is Hypertext markup language\nwhich is developed by tim berners lee in the year 1991\n\nhtml is a language of the web.\n\nWhat is Web?\n    web is collection of resources available through the internet.\n\nInternet\n    internet is network of interconnected systems.\n\nISP -> Internet service provider\nSERVER -> a remote computer system that stores the data of webpages & websites\n\nwebpage\n    webpage is a document written using HTML to structure the content\nwebsite\n    website is a collection of webpages\n\n\n\nClient     Internet (network)  Server\n\nBrowser\n    browser is software that diplays the information written using HTML\n\nURL\n    uniform resource locator which narrows the IP address of the servers\nIP\n    internet protocol unique identifier for the every system that connected to the internet\n\nDNS -> Domain naming servers    100.101.0.1  -> Domain Names\n                                                         100.101.0.1 -> kaywords ( DNS ) \n\n    GoDadyy, Hostingers\n\n\nFilpkart \nhttps://flipkart.com   ->    100.101.0.1\n\nthe process of accessiing the information of the website\n\n\nrequest & response\nrequest is sent by the browsers using the URLS or the webpages\n    \nresponse is the processd data sent back by the servers on the request\n\nClient & server\n\n                DNS Servers\n                                           flipkart.com   :  100.101.0.1",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "nEKBidv0p96yJR0tEwC5p",
+      "type": "rectangle",
+      "x": 3708.026695612799,
+      "y": 16339.92300814628,
+      "width": 798.029013508929,
+      "height": 1253.1295265020615,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9B",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1750334481,
+      "version": 60,
+      "versionNonce": 1400825759,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787547159177,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "edyGrZP55yKKFILmzWq8F",
+      "type": "text",
+      "x": 3842.9508907445515,
+      "y": 16867.983543500573,
+      "width": 532.3734128370329,
+      "height": 201.65667569463403,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9C",
+      "roundness": null,
+      "seed": 504449393,
+      "version": 57,
+      "versionNonce": 1084414865,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787547204124,
+      "link": null,
+      "locked": false,
+      "text": "Server",
+      "fontSize": 161.32534055570716,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Server",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "NnRczdesj7PMvoVh3vfWf",
+      "type": "rectangle",
+      "x": 391.3198535897395,
+      "y": 18725.395030845295,
+      "width": 884.5869107168348,
+      "height": 858.4841945111002,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9D",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 283660351,
+      "version": 76,
+      "versionNonce": 2058061393,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "2pgKxZrWOZYS2eH315_LI",
+          "type": "arrow"
+        },
+        {
+          "id": "WmpkIdXDW_JU4lLxAi_oq",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1787547987761,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "IZlR23XuQCH52yZdLCWrh",
+      "type": "text",
+      "x": 568.9621741162207,
+      "y": 19082.03178726501,
+      "width": 521.6969680911835,
+      "height": 98.8062831167735,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9E",
+      "roundness": null,
+      "seed": 1929089937,
+      "version": 74,
+      "versionNonce": 2113569695,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787547766039,
+      "link": null,
+      "locked": false,
+      "text": "Flipkart.com",
+      "fontSize": 79.0450264934188,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Flipkart.com",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "0KwiXItZSP2sw0teIdtvs",
+      "type": "rectangle",
+      "x": 1678.3209193168725,
+      "y": 18911.013288887356,
+      "width": 394.4386600430282,
+      "height": 449.54411151594104,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9F",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 309389233,
+      "version": 74,
+      "versionNonce": 1576744817,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "2pgKxZrWOZYS2eH315_LI",
+          "type": "arrow"
+        },
+        {
+          "id": "uu4SSL5KnkJJkFT9Uk9LL",
+          "type": "arrow"
+        },
+        {
+          "id": "_VaPfm61vtXBEdOQEkJsq",
+          "type": "arrow"
+        },
+        {
+          "id": "kyJ_tHgb2beHu1xhbl-Uu",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1787547898686,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "5Ng-NJkmsm3pCHJgZUDj8",
+      "type": "text",
+      "x": 1776.930639646168,
+      "y": 19076.23119595674,
+      "width": 145.73779700736384,
+      "height": 110.40746573330759,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9G",
+      "roundness": null,
+      "seed": 1511239967,
+      "version": 37,
+      "versionNonce": 1478365009,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787547786754,
+      "link": null,
+      "locked": false,
+      "text": "ISP",
+      "fontSize": 88.32597258664609,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "ISP",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "2pgKxZrWOZYS2eH315_LI",
+      "type": "arrow",
+      "x": 1281.9067643065744,
+      "y": 19109.473967372,
+      "width": 390.4141550102984,
+      "height": 10.144228090703109,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9I",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 312525535,
+      "version": 54,
+      "versionNonce": 153681279,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787547802175,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          390.4141550102984,
+          -10.144228090703109
+        ]
+      ],
+      "startBinding": {
+        "elementId": "NnRczdesj7PMvoVh3vfWf",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.540113764569615,
+          0.4598862354303795
+        ]
+      },
+      "endBinding": {
+        "elementId": "0KwiXItZSP2sw0teIdtvs",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.4092289095523032,
+          0.4092289095522938
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "Psa38z5k82XsgSRJ7uLgq",
+      "type": "rectangle",
+      "x": 2247.5019914620184,
+      "y": 18153.313884320163,
+      "width": 484.34765936554004,
+      "height": 609.059708670804,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9J",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1871437169,
+      "version": 97,
+      "versionNonce": 1605268223,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "uu4SSL5KnkJJkFT9Uk9LL",
+          "type": "arrow"
+        },
+        {
+          "id": "_VaPfm61vtXBEdOQEkJsq",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1787547884669,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "uu4SSL5KnkJJkFT9Uk9LL",
+      "type": "arrow",
+      "x": 1853.0632207819128,
+      "y": 18919.714120531204,
+      "width": 388.43877068010556,
+      "height": 346.6067557676033,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9K",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1126360159,
+      "version": 79,
+      "versionNonce": 1085868575,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787547875132,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          388.43877068010556,
+          -346.6067557676033
+        ]
+      ],
+      "startBinding": {
+        "elementId": "0KwiXItZSP2sw0teIdtvs",
+        "mode": "inside",
+        "fixedPoint": [
+          0.4430151482767388,
+          0.01935478948774806
+        ]
+      },
+      "endBinding": {
+        "elementId": "Psa38z5k82XsgSRJ7uLgq",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.39802253358277906,
+          0.39802253358278006
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "_VaPfm61vtXBEdOQEkJsq",
+      "type": "arrow",
+      "x": 2424.1394317131044,
+      "y": 18768.373592990967,
+      "width": 356.4552176219554,
+      "height": 307.9561609521952,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9L",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1933542047,
+      "version": 69,
+      "versionNonce": 214385439,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787547886546,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -356.4552176219554,
+          307.9561609521952
+        ]
+      ],
+      "startBinding": {
+        "elementId": "Psa38z5k82XsgSRJ7uLgq",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.7471128808969013,
+          0.7471128808969033
+        ]
+      },
+      "endBinding": {
+        "elementId": "0KwiXItZSP2sw0teIdtvs",
+        "mode": "inside",
+        "fixedPoint": [
+          0.9871326880884392,
+          0.3677424769247462
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "kyJ_tHgb2beHu1xhbl-Uu",
+      "type": "arrow",
+      "x": 2067.617464631593,
+      "y": 19142.35098770478,
+      "width": 680.009174495468,
+      "height": 5.425590987357282,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9M",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 2098270673,
+      "version": 56,
+      "versionNonce": 104722673,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787547899984,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          680.009174495468,
+          -5.425590987357282
+        ]
+      ],
+      "startBinding": {
+        "elementId": "0KwiXItZSP2sw0teIdtvs",
+        "mode": "inside",
+        "fixedPoint": [
+          0.9869634616248145,
+          0.5146051141395515
+        ]
+      },
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "6CdtAEJaCx5oE4yLM_Cd3",
+      "type": "ellipse",
+      "x": 2744.00948648198,
+      "y": 18762.558790708204,
+      "width": 692.6689327927229,
+      "height": 723.4139023943244,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9N",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 189773535,
+      "version": 107,
+      "versionNonce": 1695991519,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "uHVnfw1GLeKvxlClWS3pj",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1787547934422,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "0hUwVGMVfOE8em4bMHGqt",
+      "type": "text",
+      "x": 2908.5862753561555,
+      "y": 19066.977856195997,
+      "width": 403.3055841698459,
+      "height": 114.57549545820795,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9O",
+      "roundness": null,
+      "seed": 280962929,
+      "version": 47,
+      "versionNonce": 1884458559,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787547920645,
+      "link": null,
+      "locked": false,
+      "text": "Internet",
+      "fontSize": 91.66039636656637,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Internet",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "uHVnfw1GLeKvxlClWS3pj",
+      "type": "arrow",
+      "x": 3425.8272372999886,
+      "y": 19041.072990316876,
+      "width": 736.0736606915784,
+      "height": 3.617014664814633,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9P",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1808091775,
+      "version": 57,
+      "versionNonce": 1623490943,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787547936222,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          736.0736606915784,
+          -3.617014664814633
+        ]
+      ],
+      "startBinding": {
+        "elementId": "6CdtAEJaCx5oE4yLM_Cd3",
+        "mode": "inside",
+        "fixedPoint": [
+          0.9843342447437855,
+          0.38499978876111857
+        ]
+      },
+      "endBinding": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "kwy1DeM1OAL8KS_pBHEG_",
+      "type": "rectangle",
+      "x": 4160.092390659159,
+      "y": 18722.77087050377,
+      "width": 557.0286751778722,
+      "height": 736.0737296817097,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9Q",
+      "roundness": {
+        "type": 3
+      },
+      "seed": 1178767793,
+      "version": 86,
+      "versionNonce": 1130315985,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "id": "WmpkIdXDW_JU4lLxAi_oq",
+          "type": "arrow"
+        }
+      ],
+      "updated": 1787547984859,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "DYA1yINXTwpXR8ZHcE92B",
+      "type": "text",
+      "x": 4185.4117692734035,
+      "y": 19047.083930588844,
+      "width": 457.7893700565041,
+      "height": 69.36205325655096,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9R",
+      "roundness": null,
+      "seed": 250915889,
+      "version": 97,
+      "versionNonce": 692520817,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787547958893,
+      "link": null,
+      "locked": false,
+      "text": "Flipkart Server",
+      "fontSize": 55.48964260524078,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Flipkart Server",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "WmpkIdXDW_JU4lLxAi_oq",
+      "type": "arrow",
+      "x": 4154.092390659159,
+      "y": 19401.821361095725,
+      "width": 2878.4629989853083,
+      "height": 306.49344758913503,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9S",
+      "roundness": {
+        "type": 2
+      },
+      "seed": 642686769,
+      "version": 133,
+      "versionNonce": 1719255121,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787547990228,
+      "link": null,
+      "locked": false,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -1397.2383117646427,
+          306.49344758913503
+        ],
+        [
+          -2878.4629989853083,
+          50.02691281711668
+        ]
+      ],
+      "startBinding": {
+        "elementId": "kwy1DeM1OAL8KS_pBHEG_",
+        "mode": "orbit",
+        "fixedPoint": [
+          0.7896593696029635,
+          0.7896593696029627
+        ]
+      },
+      "endBinding": {
+        "elementId": "NnRczdesj7PMvoVh3vfWf",
+        "mode": "inside",
+        "fixedPoint": [
+          0.9996864382353351,
+          0.846204563476274
+        ]
+      },
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "elbowed": false
+    },
+    {
+      "id": "MpbfRBvIXmycnwWPOeOBj",
+      "type": "text",
+      "x": 2448.0472516226496,
+      "y": 19764.09111835383,
+      "width": 408.767946764562,
+      "height": 116.12730362855659,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9T",
+      "roundness": null,
+      "seed": 1360044049,
+      "version": 68,
+      "versionNonce": 904758577,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787548024026,
+      "link": null,
+      "locked": false,
+      "text": "TCP / IP",
+      "fontSize": 92.90184290284529,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "TCP / IP",
+      "autoResize": true,
+      "lineHeight": 1.25
+    },
+    {
+      "id": "_EqDcEYRyu6j5CzavyOE2",
+      "type": "text",
+      "x": 425.7570743144514,
+      "y": 20154.024550438626,
+      "width": 7259.27294921875,
+      "height": 42774.25848809157,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "b9U",
+      "roundness": null,
+      "seed": 1648405745,
+      "version": 6401,
+      "versionNonce": 751262079,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1787552584397,
+      "link": null,
+      "locked": false,
+      "text": "TCP\n    a transfer control protocol which splits the information into small packets\nIP \n    Unique identifier\n\n\n\n\nHTML\n    for structuring the the content of the webpages\nCSS\n    for styling the webpages\nJavaScript\n    To add the interactivity and logic to the webpages\n    to create dynamic webpages\n\nwebpage\n    a document that written using HTML\n\n1. Static Webpage\n        the webpage that contains some information which never be updated \n2. dynamic webpages\n        the webpages that contain the frequently changed information\n\nHTML\n    cons\n    1. we cant add the logics\n    2. Static Typed using tags\n    \n    pros\n    1. Mostly  / widely used to create the webpages\n    2. we can add the text, multimedia , tables and lists to structure the information\n    3. supports some webapis to communicate with the user device\n        ( access microphone, camera, locations)\n\nCSS\n    CSS is used to add the visual appearance to the webpages\n\nJavaScript\n    1. it can directly communicate with the HTML & CSS using the webapis\n    2. it helps to fetch the data from the servers in real time\n\n\n\nHTML\n\n    Hypertext\n        A text information that is marked to highlight the information or can suport the click and navigate\n    between the resources\n    Markup\n        a text that is highlighted\n\n    language\n        language is the set of rules and grammer that is used to communicate with the hardwares and software\n   \n    \n    Browser Architecture\n\n        Rendering Engine -> \n                is responsible for converting the HTML & CSS into visual information\n                    gecko -> used by Edge & chrome\n                    webkit -> Apple\n        Networking Component\n                 is responsible for sending and receiving the information on the internet\n        JavaScript Engine\n                    responsible to compile & execute the javascript code\n                    javascript core -> apple\n                    V8  -> edge & chrome\n                    spidermonkey -> firefox\n\n\n\nHTML\n        the HTML is tag based language\n        a tag is syntax / basic building block of the HTML\n\n    <>  - placeholder \n    <html> -> tag name inside the placeholder\n\nHTML Structure\n\n    <html>  -> this is root element of every wepage and every html document \nstarts with html tag\n     <head> -> head is first section of the webpage that contains the metadata about the webpage\n        <body> -> this contains the visual information on browser screen\n\n    <!doctype HTML> -> this represents the version of HTML language (HTML 5)\n\n\n<!doctype HTML>\n<HTML>  - rootm element\n    <head>\n            Metadata section\n    </head>\n    <body>\n\n            Visible section on the browser            \n\n    </body>\n\n</ HTML>\n\n    the every tag must be closed using the forward slash ( / )\n\nthe tag is written inside the placeholders\nthe combination of tag and content is called as element\n\n<html> -> this is the tag\n<html>\n    <head> </head>\n    <body> </body>\n</html>\n\n    <p> Content </p> -> element\n    <p> </p> -> Tag\n\n1. container element element\n    the element that have the openeing and closing tags\n    <html> </html>\n    <head> </head>\n    <body> </body>\n\n2. empty element\n    self closing tags / the tags that dont have the closing tags\n\n    <br/> -> adds the line break \n    <hr> -> adds the horizontal line \n\n\nText formatting tags\n\n    The tags are used to represent the text based information\n    <p> -> Paragraph tag \n            used to structure the information into paragraphs\n    <span> \n            used to highlight specific information into paragraphs for stylings\n    <h1> / <h6> -> heading tags\n    \n            used to add the headings for the content\n            heading tags are by default in bold style\n\nEditors\n    Notepad , VS Code\n   \n    auto close tags , live server \n\ncreate an HTML file with .html extension\n index.html \n\nto create the css file use .css extension\nto create js .js extension\n\n\nattributes\n        attributes provides the additional information to the tags\n        attributes must be written inside the opening tags\n        \n    < p attribute = \"value > </p>\n\ntitle\n       title is used to give the title for the webpage that is visible \n    in the browser tab\n    title tag must be written inside the head section\nlink\n    link is used to add the external resources to the webpage\n    like the favicon for the webpage or the css files\n\n    favourite icon for the webpage\n    attribute\n    rel \n        defines the relationship between linked sources tag\n    href\n        hyperlink reference which adds the reference between linked resources\n        \n\nscript\n    this tag is used for linking the javascript to the current webpage\n    \n    attributes\n        src - source\n            this defines the source of the linked resource \n\n        type\n            defines the type of javascript files\n\n    \n     \n<!--  --/> - comment tag\n        to provide the code explainations that is not visible on the browser\n\n        \n\n\nCSS\n    Cascading style sheet\n    \n        used to style the webpages\n\n3 ways to write the css\n1.inline css\n        is writtent inside the style attribute\n2. internal css\n        writtent inside the style tag inside head section\n3. external CSS\n        written inside the separate css file using .css extension and the link tag\n\n\nstructure of the CSS\n    \n    selector\n            - selector is a identifier for the target element\n    body - \n            combination of diffrent CSS properties applied to the element\n               {}\n\n    properties\n        - it is combination of key and valu pair where the key identifier for the style \n            and value is the type of style applied to element\n\n        color : red ; -- : separator of key and value \n                    ; -- line termination\n\n\nprorities\n    1. inline CSS\n    2. internal CSS\n    3. external CSS \n    4. !important -> this sets highest priority to the CSS property\n\n    \n    \n<!doctype html>\n<html>\n  <head>\n    <title>This is demo page</title>\n\n    <!-- External CSS -->\n    <link rel=\"stylesheet\" href=\"style.css\" />\n    <script src=\"script.js\" type=\"\"></script>\n\n    <!-- internal CSS -->\n    <style>\n      h1 {\n        color: red;\n      }\n\n      p {\n        color: green;\n      }\n    </style>\n  </head>\n  <body>\n    <!--  \n    \n    \n    explaination\n    \n    -->\n\n    <!-- Inline Style -->\n    <p style=\"color: red\">paragraph</p>\n    <h1 style=\"color: green\">largest heading</h1>\n\n    <h6>smalleest heading</h6>\n  </body>\n</html>\n\n\n\n\n\n\n\n\n1. create the HTML file and write some information about yourself\n\n\n-> Types of tags, colors in the CSS\n\n",
+      "fontSize": 122.21216710883304,
+      "fontFamily": 8,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "TCP\n    a transfer control protocol which splits the information into small packets\nIP \n    Unique identifier\n\n\n\n\nHTML\n    for structuring the the content of the webpages\nCSS\n    for styling the webpages\nJavaScript\n    To add the interactivity and logic to the webpages\n    to create dynamic webpages\n\nwebpage\n    a document that written using HTML\n\n1. Static Webpage\n        the webpage that contains some information which never be updated \n2. dynamic webpages\n        the webpages that contain the frequently changed information\n\nHTML\n    cons\n    1. we cant add the logics\n    2. Static Typed using tags\n    \n    pros\n    1. Mostly  / widely used to create the webpages\n    2. we can add the text, multimedia , tables and lists to structure the information\n    3. supports some webapis to communicate with the user device\n        ( access microphone, camera, locations)\n\nCSS\n    CSS is used to add the visual appearance to the webpages\n\nJavaScript\n    1. it can directly communicate with the HTML & CSS using the webapis\n    2. it helps to fetch the data from the servers in real time\n\n\n\nHTML\n\n    Hypertext\n        A text information that is marked to highlight the information or can suport the click and navigate\n    between the resources\n    Markup\n        a text that is highlighted\n\n    language\n        language is the set of rules and grammer that is used to communicate with the hardwares and software\n   \n    \n    Browser Architecture\n\n        Rendering Engine -> \n                is responsible for converting the HTML & CSS into visual information\n                    gecko -> used by Edge & chrome\n                    webkit -> Apple\n        Networking Component\n                 is responsible for sending and receiving the information on the internet\n        JavaScript Engine\n                    responsible to compile & execute the javascript code\n                    javascript core -> apple\n                    V8  -> edge & chrome\n                    spidermonkey -> firefox\n\n\n\nHTML\n        the HTML is tag based language\n        a tag is syntax / basic building block of the HTML\n\n    <>  - placeholder \n    <html> -> tag name inside the placeholder\n\nHTML Structure\n\n    <html>  -> this is root element of every wepage and every html document \nstarts with html tag\n     <head> -> head is first section of the webpage that contains the metadata about the webpage\n        <body> -> this contains the visual information on browser screen\n\n    <!doctype HTML> -> this represents the version of HTML language (HTML 5)\n\n\n<!doctype HTML>\n<HTML>  - rootm element\n    <head>\n            Metadata section\n    </head>\n    <body>\n\n            Visible section on the browser            \n\n    </body>\n\n</ HTML>\n\n    the every tag must be closed using the forward slash ( / )\n\nthe tag is written inside the placeholders\nthe combination of tag and content is called as element\n\n<html> -> this is the tag\n<html>\n    <head> </head>\n    <body> </body>\n</html>\n\n    <p> Content </p> -> element\n    <p> </p> -> Tag\n\n1. container element element\n    the element that have the openeing and closing tags\n    <html> </html>\n    <head> </head>\n    <body> </body>\n\n2. empty element\n    self closing tags / the tags that dont have the closing tags\n\n    <br/> -> adds the line break \n    <hr> -> adds the horizontal line \n\n\nText formatting tags\n\n    The tags are used to represent the text based information\n    <p> -> Paragraph tag \n            used to structure the information into paragraphs\n    <span> \n            used to highlight specific information into paragraphs for stylings\n    <h1> / <h6> -> heading tags\n    \n            used to add the headings for the content\n            heading tags are by default in bold style\n\nEditors\n    Notepad , VS Code\n   \n    auto close tags , live server \n\ncreate an HTML file with .html extension\n index.html \n\nto create the css file use .css extension\nto create js .js extension\n\n\nattributes\n        attributes provides the additional information to the tags\n        attributes must be written inside the opening tags\n        \n    < p attribute = \"value > </p>\n\ntitle\n       title is used to give the title for the webpage that is visible \n    in the browser tab\n    title tag must be written inside the head section\nlink\n    link is used to add the external resources to the webpage\n    like the favicon for the webpage or the css files\n\n    favourite icon for the webpage\n    attribute\n    rel \n        defines the relationship between linked sources tag\n    href\n        hyperlink reference which adds the reference between linked resources\n        \n\nscript\n    this tag is used for linking the javascript to the current webpage\n    \n    attributes\n        src - source\n            this defines the source of the linked resource \n\n        type\n            defines the type of javascript files\n\n    \n     \n<!--  --/> - comment tag\n        to provide the code explainations that is not visible on the browser\n\n        \n\n\nCSS\n    Cascading style sheet\n    \n        used to style the webpages\n\n3 ways to write the css\n1.inline css\n        is writtent inside the style attribute\n2. internal css\n        writtent inside the style tag inside head section\n3. external CSS\n        written inside the separate css file using .css extension and the link tag\n\n\nstructure of the CSS\n    \n    selector\n            - selector is a identifier for the target element\n    body - \n            combination of diffrent CSS properties applied to the element\n               {}\n\n    properties\n        - it is combination of key and valu pair where the key identifier for the style \n            and value is the type of style applied to element\n\n        color : red ; -- : separator of key and value \n                    ; -- line termination\n\n\nprorities\n    1. inline CSS\n    2. internal CSS\n    3. external CSS \n    4. !important -> this sets highest priority to the CSS property\n\n    \n    \n<!doctype html>\n<html>\n  <head>\n    <title>This is demo page</title>\n\n    <!-- External CSS -->\n    <link rel=\"stylesheet\" href=\"style.css\" />\n    <script src=\"script.js\" type=\"\"></script>\n\n    <!-- internal CSS -->\n    <style>\n      h1 {\n        color: red;\n      }\n\n      p {\n        color: green;\n      }\n    </style>\n  </head>\n  <body>\n    <!--  \n    \n    \n    explaination\n    \n    -->\n\n    <!-- Inline Style -->\n    <p style=\"color: red\">paragraph</p>\n    <h1 style=\"color: green\">largest heading</h1>\n\n    <h6>smalleest heading</h6>\n  </body>\n</html>\n\n\n\n\n\n\n\n\n1. create the HTML file and write some information about yourself\n\n\n-> Types of tags, colors in the CSS\n\n",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff",
+    "lockedMultiSelections": {}
+  },
+  "files": {}
+}

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Modak&family=Noto+Sans+Khudawadi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sekuya&family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top-bar {
+  border: 1px solid;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: linear-gradient(90deg, #fffcf6 0%, #fff0e0 100%);
+  border: 1px solid #ffe8cc;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+header {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  /* border: 1px solid; */
+}
+header p {
+  font-weight: bold;
+}
+header p span {
+  border: 1px solid;
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(135deg, #ff6b00 0%, #ffa940 100%);
+  font-size: 10px;
+  padding: 5px;
+}
+nav {
+  /* border: 1px solid; */
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  text-decoration: none;
+
+  color: black;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: monospace;
+      }
+
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        border: 1px solid;
+        height: 70px;
+        width: 20%;
+        position: relative;
+        border-radius: 10px;
+        background-color: #a3cffb59;
+        border-color: #a3cffbd2;
+      }
+      .new {
+        display: inline-block;
+        position: absolute;
+        top: -7px;
+        right: 7px;
+        /* border: 1px solid; */
+        width: 40px;
+        text-align: center;
+        border-radius: 4px;
+        background-color: #ffc107;
+        font-size: 11px;
+      }
+      .content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+      }
+
+      .content img {
+        height: 50px;
+      }
+      .text {
+        text-align: center;
+      }
+      .text p {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <span class="new">New</span>
+        <div class="content">
+          <img src="image.png" alt="" />
+          <div class="text">
+            <p>W3School app</p>
+            <span>start the adventure</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

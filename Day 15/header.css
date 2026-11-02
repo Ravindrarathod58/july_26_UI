@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Modak&family=Noto+Sans+Khudawadi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sekuya&family=Space+Grotesk:wght@300..700&display=swap");
+:root {
+  --bg-color: orange;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-around {
+  justify-content: space-around;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+
+.circle {
+  border-radius: 50%;
+}
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+.top-bar {
+  border: 1px solid;
+  width: 90%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: linear-gradient(90deg, #fffcf6 0%, #fff0e0 100%);
+  border: 1px solid #ffe8cc;
+}
+.right {
+  height: 40px;
+}
+
+header {
+  width: 90%;
+  height: 80px;
+  /* border: 1px solid; */
+}
+header p {
+  font-weight: bold;
+}
+header p span {
+  border: 1px solid;
+  border-radius: 5px;
+  color: white;
+  background: linear-gradient(135deg, #ff6b00 0%, #ffa940 100%);
+  font-size: 10px;
+  padding: 5px;
+}
+nav {
+  /* border: 1px solid; */
+  width: 50%;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  /* border: 1px solid; */
+  width: 25%;
+}
+.button .btn_1 {
+  border-radius: 20px;
+  height: 50px;
+  width: 120px;
+  outline: none;
+  border: 1px solid rgb(189, 188, 188);
+  background-color: transparent;
+}
+
+.badge {
+  top: 0px;
+  left: 22px;
+  font-size: 8px;
+  height: 18px;
+  width: 18px;
+  border: 1px solid white;
+  background-color: var(--bg-color);
+  color: white;
+}
+
+.button .btn_2 {
+  border-radius: 20px;
+  width: 150px;
+  background-color: rgba(19, 1, 36, 0.989);
+  color: white;
+  border: none;
+  outline: none;
+}

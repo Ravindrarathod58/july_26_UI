@@ -1,0 +1,25 @@
+/* 
+    Selectors
+        1. class
+        2. id
+        3. tagName
+        4. decendant
+            parent child
+        5. group
+            element1 , element2, element3{
+
+            }
+
+        6. child
+        7. pseudo class
+        8. pseudo element
+        9. attribute
+            input[type="text"]{
+
+
+        }
+
+        input type="text"
+        input type="password"
+
+*/

@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* img {
+      } */
+      #img_1 {
+        border: 1px solid red;
+      }
+
+      .img_group {
+        border: 2px solid blue;
+      }
+
+      .img_2_group {
+        background-color: red;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        link & images
+
+
+        figure
+            drawings, images, sketch creates the holding space
+
+
+    Attributs & entities
+
+        attributes
+            used to provide the extra information to the elements
+
+            1. Global
+                global attributes are applicable to all HTML Elements
+                id -> Unique identifier 
+                        CSS , JavaScript
+                class   -> group identifier 
+                    to create the group of elements for the same style
+                    we can add more than one class to the element by separating with space
+
+                title
+                    to add the description to the tags and its visible as tooltip when we take 
+                    mouse cursor 
+            
+            2. element specific attributes
+                href -> link, anchor
+                src -> img, audio, video, script, iframe
+                alt -> img
+                type
+                name
+                value
+
+            3. event attributes
+                to interact on the click of mouse button or the keypress from the keyboard
+                used in javascript for the interactivity
+
+                onclick -> 
+                oncanplay
+                onkeypress
+
+        
+        HTML entities
+            entities are the special characters that directly we cannot display on the webpage
+            or not available on the keyboard
+
+            hexadecimal
+                symbols, emojis
+
+            secial charcter
+                &lt; -> less than symbol
+                &gt; -> greter than symbol
+                &nbsp; -> non breaking space
+
+
+
+    
+            List
+                shopping list, grocery list
+                collection of same type of data ordered in list 
+            
+            1. ordered list
+                always starts from 1 
+
+                <ol> -> creates the ordered list
+                <li> -> used to aadd the items in the list
+            2. unordered list
+                always visible as bullets
+                <ul> -> creates unordered list
+                     <li> -> used to aadd the items in the list
+
+            3. definition list
+                collection of terms & definitions
+            
+                <dl> -> creates the definition list
+                <dt> -> adds the definition term
+                <dd> -> adds the definition description
+
+        HTML -> term
+            HTML is the language of the web -> defintion description
+        CSS -> term
+            CSS is used to style the webpages -> defintion description
+
+
+        OL
+           start -> sets the starting point of the list
+           type -> to change the list type 
+                    a, A, 1, i, I
+
+        UL
+            type 
+                square, circle
+        
+
+    -->
+
+    <a href="https://www.google.com">Visit Google</a>
+
+    <img src="images/image.png" alt="" height="500px" width="500px" />
+    <img src="images/image.png" alt="" height="500px" width="500px" />
+
+    <figure>
+      <img
+        src="images/image.png"
+        class="img_group"
+        alt=""
+        height="500px"
+        width="500px"
+      />
+      <figcaption>Fig 1.1 : Waterfall</figcaption>
+    </figure>
+
+    <figure>
+      <img
+        src="images/image.png"
+        alt=""
+        class="img_group img_2_group"
+        height="500px"
+        width="500px"
+      />
+      <figcaption>Fig 1.1 : Waterfall</figcaption>
+    </figure>
+
+    <figure>
+      <img
+        src="images/image.png"
+        id="img_1"
+        alt=""
+        height="500px"
+        width="500px"
+      />
+      <figcaption>Fig 1.1 : Waterfall</figcaption>
+    </figure>
+
+    <!-- 
+    
+        <img> creates space
+            src => URL
+            alt => Title
+            height => controls verticle space
+            width => controls horizontal space
+    
+    
+    -->
+
+    <h1 onclick="alert('Hello h1 is clicked')">
+      <abbr title="Hypertext Markup Language">HTML</abbr>
+    </h1>
+
+    <code>
+      <pre>
+            &lt;!doctype html&gt;
+            &lt;html&gt;
+                &lt;head&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+
+                
+        </pre
+      >
+    </code>
+
+    <span> &copy; </span>
+    <span> &dash; </span>
+    <span> &bull; </span>
+    <span> &#8377; // hexadecimal </span>
+    <span> ❌ </span>
+    <span> ❌ </span>
+
+    (●'◡'●) -> smily face （*＾-＾*） ¥ अ
+
+    <span> &Alpha; </span>
+    <span> &amp; </span>
+    <span> &beta; </span>
+
+    <p>List of fruits</p>
+    <p>Un ordered list</p>
+    <ul type="">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ul>
+
+    <p>ordered list</p>
+    <ol start="" type="I">
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ol>
+
+    <p>Definition list</p>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HTML is the language of the web used to structure the webpages</dd>
+
+      <dt>CSS</dt>
+      <dd>CSS is used to style the webpages</dd>
+
+      <dt>JavaScript</dt>
+      <dd>
+        JavaScript is high level programming language used to create the dynamic
+        webpages
+      </dd>
+    </dl>
+
+    <!-- 
+        attributes
+            1. global 2. specific 3. event
+
+            event attribute -> event handlers
+            javascript -> event listeners
+        
+        entities
+            1. hexdecimal 2. special character
+        
+        list
+            1. ordered 2. unordered 3. defintion list 
+    
+    
+
+
+
+
+    Tasks
+        1. List shopping
+        2. list category wise 
+            1. fruits
+            2. vegitables
+
+
+            1. fruits
+                * apple
+                * banana
+                * cherry
+            2. Vegitable
+                * cabbage
+                * potato
+                * tomato
+
+        3. definition list
+    
+            Databases
+                SQL
+                    description
+                oracle
+                    description
+                MySql
+                    description
+                MongoDB
+                    description
+
+            programming languages
+                java
+                    description
+                python
+                    description
+                c
+                    description
+                CPP
+                    description
+
+            Scripting language
+                javascript
+                    description
+                PHP
+                    description
+                Jquery
+                    description
+            web language
+                HTML
+                    description
+                CSS 
+                    description
+                React
+                    description
+                angular
+                    description
+            frameworks
+                spring boot
+                    decription
+                django
+                    description
+
+            
+
+    -->
+  </body>
+</html>

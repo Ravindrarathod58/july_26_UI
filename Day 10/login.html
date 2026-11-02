@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="login-container" id="login">
+      <div class="close">
+        <span id="closeBtn" class="material-symbols-outlined"> close </span>
+      </div>
+      <div class="text-content">
+        <p class="sign">Sign in</p>
+        <p>Get access to more learning features</p>
+        <p class="register">Dont have and account? <a href="">Register</a></p>
+      </div>
+      <div class="icons">
+        <div class="card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/google/google-original.svg"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/facebook/facebook-original.svg"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg"
+          />
+        </div>
+      </div>
+      <div class="divider">
+        <span>OR</span>
+      </div>
+      <form action="">
+        <input type="email" placeholder="email" />
+        <input type="password" placeholder="password" />
+        <a href="">forget password?</a>
+
+        <!-- onclick  event handlers -->
+        <input type="submit" value="Sign in" />
+      </form>
+    </div>
+
+    <script>
+      const loginBtn = document.getElementById("closeBtn");
+      const loginContainer = document.getElementById("login"); // Document object modal
+      // event listener
+      loginBtn.addEventListener("click", () => {
+        loginContainer.style.display = "none"; // JCSS
+      });
+    </script>
+  </body>
+</html>
