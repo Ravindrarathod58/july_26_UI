@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <!-- 
+            Bootstrap is CSS library used to design the webpages without writing core css
+            Bootstrap provides the Utility classes that we directly add in class attribute
+
+            using NPM
+                1. Install node.js from node.org
+                2. npm -> node package manager ( manages the external libraries and dependencies)
+                3. npm install bootstrap bootstrap-icons
+                4. it will add the bootstrap folder in node_modules
+    
+
+
+        1. typography
+            we can style the text and text based content 
+            like changing style of the font, weight, size, style
+
+        font size
+            -> h1 -> h6 ( largest to smallest font along with font weight )
+            -> display-1 -> display-6 
+
+        font style
+            - fst
+        
+        font-weight
+            fw -> font weight
+            bold, bolder, light, lighter, normal
+
+        text-align
+            left, right, center
+            text-center -> aligns the text to center
+            text-end -> align the text to right
+            text-start -> align text to left
+
+        line height
+            space between two lines
+            lh-1 -> normal 
+            lh-lg -> large
+            lg-sm -> small
+
+        word-wrap / truncate
+            text-wrap -> wraps the text on multiple liness
+            text-truncate -> it truncates the text if not fit in container
+
+        color
+            limited colors
+            primary -> blue
+            secondary -> gray
+            light -> white
+            dark -> black
+            danger -> orangered
+            success -> darkgreen
+            warning -> yellow
+            info -> aqua
+
+        text-backgrounds
+             primary -> blue  text-bg-primary -. background blue text white
+
+            secondary -> gray    grey bg and white text
+            light -> white       white bg with dark text
+            dark -> black
+            danger -> orangered
+            success -> darkgreen
+            warning -> yellow
+            info -> aqua
+
+
+        if you want to maintain the theme then we can use a attribute 
+        data-attribute
+
+        box modal
+            height 
+                - h-25 = 25%
+                - h-50 = 50%
+                - h-75 = 75%
+                - h-100 = 100%
+                - min-vh-100 = 100vh (viewport height)
+            width
+                - w-25 = 25%
+                - w-50 = 50%
+                - w-75 = 75%
+                - w-100 = 100%
+                - min-vw-100 = 100vw (viweport width)
+            margin
+                - m-0 -> m-5 (applies the margin on all four sides)
+                - mx-0 -> mx-5 (applies the margin on left and right sides)
+                - my-0 -> my-5 (appliest the margin on top and bottom)
+                -> ms-0 -> ms-5 (margin-left)
+                -> me-0 -> me-5 (margin-right)
+                -> mt-0 -> mt-5 (margin-top)
+                -> mb-0 -> mb-5 (margin-bottom)
+                -> m-auto
+            padding
+                - p-0 -> p-5 (applies padding on all four sides)
+                - px-0 -> px-5 (applies left and right padding)
+                - py-0 -> py-5 (applies top and bottom padding)
+                - ps-0 -> ps-5 (padding-left)
+                - pe-0 -> pe-5 (padding-right)
+                - pt-0 -> pt-5 (padding-top)
+                - pb-0 -> pb-5 (padding-bottom)
+            box-sizing
+            box-shadow
+                shadow -> applies the normal shadow
+                shadow-md -> medium shadow
+                shadow-lg -> large shadow
+            border
+                border -> removes the default border styles (adds the small border)
+                border-0 -> border-5 -> border width
+                border-left
+                border-right
+                border-top
+                border-bottom
+            border color
+                border-primary 
+                border-secondary
+                border-danger
+                border-warning
+                border-dark
+                border-light
+                border-info
+                border-success
+            border-radius
+                rounded -> normal border radius to all sides
+                rounded-bottom -> bottom left , bottom right
+                rounded-top -> top left, top right
+                rounded-circle -> creates the cricle (border-radius : 50%)
+
+            flex-layout (flexboxes)
+                d-flex -> display : flex
+                justify-content-center ->  justify-content : space-around
+                justify-content-between ->  justify-content : space-between
+                justify-content-evenly ->  justify-content : space-evenly
+
+                align-items-center -> align-items : center
+                align-items-start -> align-items : start / flex-start
+                align-items-end -> align-items : end / flex-end
+
+                flex-column -> flex-direction : column
+                flex-column-reverse -> flex-direction : column-reverse
+                flex-row -> flex-direction : row;
+                flex-row-reverse -> flex-direction : row-reverse;
+
+                flex-wrap -> flex-wrap : wrap;
+
+
+                grid properties
+                    row -> to create the row
+                    col -> to create the columns
+
+                sm -> small (576 px)
+                md -> medium screen ( 768px wide)
+                lg -> large screen ( 992px wide)
+                xl -> xtra large screen ( 1200px wide)
+                xxl -> xtra xtra large ( 1400px wide)
+
+
+        Webpage
+
+        -->
+
+    <!-- <h1 class="min-vh-100">Hello</h1> -->
+    <div class="min-vh-100 border border-3">
+      <div class="row border border-primary gap-2 p-3">
+        <div class="col col-sm-2 border border-danger" style="height: 200px">
+          col 1
+        </div>
+        <div class="col border border-danger" style="height: 200px">col 2</div>
+        <div class="col border border-danger" style="height: 200px">col 3</div>
+      </div>
+      <div class="row border border-primary gap-2 p-3">
+        <div class="col border border-danger" style="height: 200px">col 1</div>
+        <div class="col border border-danger" style="height: 200px">col 2</div>
+        <div class="col border border-danger" style="height: 200px">col 3</div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-around align-items-center min-vh-100">
+      <!-- How to design the cards using bootstrap box modal properties -->
+      <div
+        class="border border-2 d-flex justify-content-center align-items-center flex-column py-3 rounded-5"
+      >
+        <img
+          class="h-50 w-50"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+        />
+        <span class="fw-bolder">HTML</span>
+        <span class="small">The building block of every webpage</span>
+      </div>
+      <div
+        class="border border-2 d-flex justify-content-center align-items-center flex-column py-3 rounded-5"
+      >
+        <img
+          class="h-50 w-50"
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+        />
+        <span class="fw-bolder">CSS</span>
+        <span class="small">Style and layout for the webpages</span>
+      </div>
+    </div>
+  </body>
+</html>
