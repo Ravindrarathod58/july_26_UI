@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
+    <!-- 
+        container
+        container-fluid
+        container-xl
+        container-xxl
+        container-lg
+    
+    -->
+  </head>
+  <body>
+    <div
+      class="container border border-1 rounded-bottom-3 bg-danger-subtle border-danger d-flex justify-content-between p-3"
+    >
+      <div>
+        <span class="text-warning fw-bold">&starf;</span>
+        <span>Get 5% off on your first order,</span>
+        <span class="fw-bold text-danger">Promo: ORDER5</span>
+      </div>
+      <div>
+        <span>📍</span>
+        <span>Banjara hills, </span>
+        <span class="fw-bold">Road No. 12,</span>
+        <span>Hyderabad</span>
+        <a href="" class="text-danger">Change Location</a>
+      </div>
+    </div>
+    <header
+      class="container d-flex justify-content-between align-items-center"
+      style="height: 80px"
+    >
+      <div class="d-flex gap-1">
+        <span class="fw-bold">Order</span>
+        <span class="bg-danger rounded-2 small text-light">.in</span>
+      </div>
+      <nav class="w-50 d-flex justify-content-around">
+        <a href="" class="text-decoration-none text-dark">Home</a>
+        <a href="" class="text-decoration-none text-dark">Browse Menu</a>
+        <a href="" class="text-decoration-none text-dark">Special Offers</a>
+        <a href="" class="text-decoration-none text-dark">Restaurants</a>
+        <a href="" class="text-decoration-none text-dark">Track Order</a>
+      </nav>
+      <div>
+        <button
+          class="position-relative btn btn-outline-secondary rounded-5"
+          style="height: 40px; width: 150px"
+        >
+          <span
+            class="position-absolute border border-2 rounded-circle bg-danger text-light"
+            style="top: 2px; left: 45px; font-size: 8px; width: 15px"
+            >23</span
+          >
+          <span class="bi bi-cart"></span>
+          <span class="text-dark">&#8377; 1,249</span>
+        </button>
+        <button class="btn btn-primary rounded-5">
+          <span class="bi bi-person-fill">Login/sign up</span>
+        </button>
+      </div>
+    </header>
+  </body>
+</html>
